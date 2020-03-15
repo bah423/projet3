@@ -1,0 +1,73 @@
+body{
+    position: relative;
+}
+header{
+    background-color: rgb(21, 143, 174);
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.note_page4{ 
+    text-align: center;
+    font-size: 270%;
+    font-weight: bold;
+}
+.conteneur_page4{
+    width:60%;
+    height: 640px;
+    background-color: #FDEBD0;
+    margin-left: 20%;
+    margin-right: 20%;
+    overflow: scroll;
+    text-align: center;
+    margin-bottom: 30%;
+    padding-bottom: 2%;
+    flex-wrap: wrap;
+    
+}
+.note_page4{ margin-top: 6%;}
+.prelude{ font-size: 150%; font-weight: bold; margin-top: 5%;}
+.menu1_page4{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 5%;
+}
+.menu2_page4{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 5%;
+}
+p{
+    font-size: 150%;
+}
+header p{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size:450%;
+    font-weight: bold;
+    color: yellow;
+}
+.note2_page4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.div_foot--page4{
+  background-color: #158fae;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-right: 3%;
+  padding-left: 3%;
+  font-size: 50px;
+  color: yellow;
+  display: flex;
+  justify-content: space-between;
+  position: absolute; bottom: 0px; left: 0; right: 0;
+  
+}
