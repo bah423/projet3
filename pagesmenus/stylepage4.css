@@ -2,6 +2,7 @@ body{
     position: relative;
 }
 header{
+    flex-wrap: wrap;
     background-color: rgb(21, 143, 174);
     margin-left: 10%;
     margin-right: 10%;
@@ -10,43 +11,71 @@ header{
     margin-bottom: 0%;
 }
 .note_page4{ 
+
+    font-family: 'Devonshire-Regular', Impact, Arial, sans-serif;
+    src:local(Devonshire-Regular) format('ttf');
+    background: -webkit-gradient(linear, left top, right top, from(#04B314 ), to(#F1F861));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
     font-size: 270%;
     font-weight: bold;
     margin-top: 6%;
+
 }
 .conteneur_page4{
     width:60%;
-    height: 640px;
-    background-color: #FDEBD0;
+    height: 600px;
+    background-color: #F2F3F4;
     margin-left: 20%;
     margin-right: 20%;
     overflow: scroll;
-    text-align: center;
     margin-bottom: 30%;
     padding-bottom: 2%;
     flex-wrap: wrap;
     
 }
-.prelude{ font-size: 150%; font-weight: bold; margin-top: 5%;}
+.prelude{
+    text-align: center;
+    font-size: 150%; 
+    font-weight: bold; 
+    margin-top: 8%;
+    margin-bottom: 2%;
+}
 .menu1_page4{
+    
+    font-size: 120%;
     text-align: left;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-left: 5%;
+    padding-left: 15%;
 }
 .menu2_page4{
+   
+    font-size: 120%;
     text-align: left;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-left: 5%;
+    padding-left: 15%;
 }
-p{
-    font-size: 150%;
+.menu1_page4 p {
+    margin:1%;
 }
+.menu2_page4 p {
+  margin: 1%;
+}
+.aligne_euro1{padding-left: 35%;}
+.aligne_euro2{padding-left: 27%;}
+.aligne_euro3{padding-left: 19.5%;}
+.aligne_euro4{padding-left: 10%;}
+.aligne_euro5{padding-left: 9.5%;}
+.aligne_euro6{padding-left: 48%;}
+.aligne_euro7{padding-left: 57.5%;}
+.aligne_euro8{padding-left: 6.8%;}
+.aligne_euro9{padding-left: 18%;}
+
 header p{
+    flex-wrap: wrap;
     margin-top: 0%;
     margin-bottom: 0%;
     font-size:450%;
@@ -64,10 +93,17 @@ header p{
   margin-right: 10%;
   padding-right: 3%;
   padding-left: 3%;
-  font-size: 50px;
+  font-size: 300%;
   color: yellow;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  position: absolute; bottom: 0px; left: 0; right: 0;
-  
+  position: absolute; bottom: -40px; left: 0; right: 0; 
 }
+@font-face{ 
+    font-family: 'Devonshire-Regular';
+   /* src:url(Felipa.eot) format('eot');
+    src:url(Felipa.svg) format('svg');
+    src:url(Felipa.woff) format('woff');*/
+    src:local(Devonshire-Regular) format('ttf');
+    } 

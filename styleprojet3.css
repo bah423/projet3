@@ -13,6 +13,16 @@ header {
   margin-bottom: 0%;
 }
 
+header p {
+  font-family: "Montserrat", Impact, Arial, sans-serif;
+  font-weight: bold;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  font-size: 450%;
+  color: yellow;
+  flex-wrap: wrap;
+}
+
 a {
   text-decoration-line: none;
 }
@@ -59,18 +69,13 @@ a {
   text-align: center;
 }
 
-p {
-  margin-top: 0%;
-  margin-bottom: 0%;
-  font-size: 100px;
-  color: yellow;
-}
-
 .proch {
+  font-family: "Montserrat", Impact, Arial, sans-serif;
+  font-weight: bold;
   text-align: center;
   background-color: #158fae;
   color: yellow;
-  font-size: 40px;
+  font-size: 200%;
   border-radius: 10px;
   margin-left: 28%;
   margin-right: 28%;
@@ -131,13 +136,12 @@ p {
   margin-bottom: 2%;
   padding-right: 3%;
   padding-left: 3%;
-  font-size: 50px;
   display: flex;
   justify-content: space-between;
 }
 
 .menu1 {
-  background-color: #998CD5;
+  background-color: rgba(240, 128, 128, 0.466);
   font-size: 20px;
   border-radius: 15px;
   margin: 3% 3%;
@@ -153,11 +157,12 @@ p {
   display: block;
 }
 .menu1:hover {
-  background-color: #7867c7;
+  background-color: rgba(235, 82, 82, 0.466);
 }
 
 .menu2 {
-  background-color: #F4F6F7;
+  flex-wrap: wrap;
+  background-color: rgba(221, 201, 201, 0.329);
   font-size: 20px;
   border-radius: 15px;
   margin: 3% 3%;
@@ -173,11 +178,19 @@ p {
   display: block;
 }
 .menu2:hover {
-  background-color: #d6dee2;
+  background-color: rgba(201, 170, 170, 0.329);
+}
+
+.degrade1 {
+  font-size: 120%;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, right top, from(#E67E22), to(#510AD5));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu3 {
-  background-color: #ffff9A;
+  background-color: #eff2f5;
   font-size: 20px;
   border-radius: 15px;
   margin: 3% 3%;
@@ -193,11 +206,11 @@ p {
   display: block;
 }
 .menu3:hover {
-  background-color: #ffff67;
+  background-color: #d0d9e1;
 }
 
 .menu4 {
-  background-color: #ccc;
+  background-color: #f7fafd;
   font-size: 20px;
   border-radius: 15px;
   margin: 3% 3%;
@@ -213,14 +226,20 @@ p {
   display: block;
 }
 .menu4:hover {
-  background-color: #b3b3b3;
+  background-color: #cee1f3;
 }
 
 .contact a {
+  font-size: 250%;
+  font-family: "Montserrat", Impact, Arial, sans-serif;
+  font-weight: bold;
   color: yellow;
 }
 
 .mlegales a {
+  font-size: 250%;
+  font-family: "Montserrat", Impact, Arial, sans-serif;
+  font-weight: bold;
   color: yellow;
 }
 
