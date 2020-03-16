@@ -2,6 +2,9 @@ body{
     position: relative;
 }
 header p {
+    color: yellow;
+    font-family: 'Montserrat', Impact, Arial, sans-serif;
+    font-weight: bold;
     background-color: rgb(21, 143, 174);
     margin-left: 10%;
     margin-right: 10%;
@@ -9,19 +12,16 @@ header p {
     margin-top: 0%;
     margin-bottom: 0%;
     flex-wrap: wrap;
-    font-size: 150%;
+    font-size: 450%;
 }
-.note--1{ text-align: center; font-family: 'Kalam', Impact, sans-serif; font-size: 300%;}
+.note--1{ text-align: center; font-family: 'Montserrat'; font-weight: bold; font-size: 300%;}
 .fa-music{color:#2E86C1;}
 .fa-music {
     color: #2E86C1;
     transform: scale(1);
     transition: transform 500ms;
   }
- /* .fa-music:hover {
-    color: rgb(48, 46, 193);
-    transform: scale(1.5);
-  }*/
+
   .note_page1:hover {
     color: rgb(48, 46, 193);
     transform: scale(1.2);
@@ -40,7 +40,14 @@ header p {
     flex-wrap: wrap;
     
 }
-.note_page1{ margin-top: 6%;font-family: 'Kalam', Impact, sans-serif; font-size: 200%;}
+@font-face{ 
+    font-family: Devonshire;
+    src:local("Devonshire");
+}
+.note_page1{ 
+    margin-top: 6%;
+    font-family: 'Devonshire', Impact, sans-serif; 
+    font-size: 200%;}
 .prelude{
     justify-content:  center;
     display: flex;
@@ -116,16 +123,9 @@ header p {
     margin-left: 9.5%;
 }
 
-
-header p {
-    margin-top: 0%;
-    margin-bottom: 0%;
-    font-size:450%;
-    font-weight: bold;
-    color: yellow;
-}
 .note2_page1{
-    font-family: 'Kalam', Impact, sans-serif; font-size: 200%;
+    font-family: Devonshire;
+    font-size: 200%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -137,6 +137,8 @@ header p {
     transform: scale(1.2);
   }
 .div_foot--1{
+  font-family: 'Montserrat', Impact, Arial, sans-serif;
+  font-weight: bold;
   background-color: #158fae;
   margin-left: 10%;
   margin-right: 10%;
@@ -146,7 +148,7 @@ header p {
   color: yellow;
   display: flex;
   justify-content: space-between;
-  position: absolute; bottom: -50px; left: 0; right: 0;
+  position: absolute; bottom: -60px; left: 0; right: 0;
   flex-wrap: wrap;
   
 }

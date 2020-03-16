@@ -16,9 +16,11 @@ header{
     margin-top: 6%;
 }
 .conteneur_page5{
+    font-family: Arial, sans-serif;
+    color: white;
     width:60%;
-    height: 600px;
-    background-color: #CC9FF0;
+    height: 550px;
+    background-color: #5D6D7E;
     margin-left: 20%;
     margin-right: 20%;
     overflow: scroll;
@@ -46,10 +48,9 @@ header{
     margin-left: 3%;
     padding: 2%;
 }
-p{
-    font-size: 150%;
-}
+
 header p{
+    font-family: 'Montserrat', Impact, Arial, sans-serif;
     margin-top: 0%;
     margin-bottom: 0%;
     font-size:450%;
@@ -62,15 +63,32 @@ header p{
     justify-content: center;
 }
 .div_foot--page5{
+  font-family: 'Montserrat', Impact, Arial, sans-serif;
+  font-weight: bold;
   background-color: #158fae;
   margin-left: 10%;
   margin-right: 10%;
   padding-right: 3%;
   padding-left: 3%;
-  font-size: 50px;
+  font-size: 250%;
   color: yellow;
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
-  position: absolute; bottom: 0px; left: 0; right: 0;
+  position: absolute; bottom: -45px; left: 0; right: 0;
   
 }
+@font-face{ 
+    font-family: "Roboto";
+    src:url(Roboto.eot) format('eot');
+    src:url(Roboto.svg) format('svg');
+    src:url(Roboto.woff) format('woff');
+    src:url(Roboto.ttf) format('ttf');
+} 
+@font-face{ 
+font-family: "Montserrat";
+src:url(Montserrat.eot) format('eot');
+src:url(Montserrat.svg) format('svg');
+src:url(Montserrat.woff) format('woff');
+src:url(Montserrat.ttf) format('ttf');
+} 

@@ -10,11 +10,18 @@ header{
     margin-top: 0%;
     margin-bottom: 0%;
 }
+@font-face{
+    font-family: Kaushan Script;
+    src: local("Kaushan Script")
+}
+@font-face{
+    font-family: Segoe Print;
+    src: local("Segoe Print");
+}
 .note_page4{ 
-
-    font-family: 'Devonshire-Regular', Impact, Arial, sans-serif;
+    font-family: Kaushan Script;
     src:local(Devonshire-Regular) format('ttf');
-    background: -webkit-gradient(linear, left top, right top, from(#04B314 ), to(#F1F861));
+    background: -webkit-gradient(linear, left top, right top, from(#04B314 ), to(#F7DC6F));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
@@ -25,7 +32,7 @@ header{
 }
 .conteneur_page4{
     width:60%;
-    height: 600px;
+    height: 575px;
     background-color: #F2F3F4;
     margin-left: 20%;
     margin-right: 20%;
@@ -36,27 +43,28 @@ header{
     
 }
 .prelude{
+    font-family: Segoe Print;
     text-align: center;
     font-size: 150%; 
     font-weight: bold; 
-    margin-top: 8%;
+    margin-top: 6%;
     margin-bottom: 2%;
 }
 .menu1_page4{
-    
+    font-family: Segoe Print;
     font-size: 120%;
     text-align: left;
     display: flex;
     flex-direction: row;
-    padding-left: 15%;
+    padding-left: 12%;
 }
 .menu2_page4{
-   
+    font-family: Segoe Print;
     font-size: 120%;
     text-align: left;
     display: flex;
     flex-direction: row;
-    padding-left: 15%;
+    padding-left: 12%;
 }
 .menu1_page4 p {
     margin:1%;
@@ -64,46 +72,49 @@ header{
 .menu2_page4 p {
   margin: 1%;
 }
-.aligne_euro1{padding-left: 35%;}
-.aligne_euro2{padding-left: 27%;}
-.aligne_euro3{padding-left: 19.5%;}
-.aligne_euro4{padding-left: 10%;}
-.aligne_euro5{padding-left: 9.5%;}
-.aligne_euro6{padding-left: 48%;}
-.aligne_euro7{padding-left: 57.5%;}
-.aligne_euro8{padding-left: 6.8%;}
-.aligne_euro9{padding-left: 18%;}
+.aligne_euro1{padding-left: 34%;}
+.aligne_euro2{padding-left: 24%;}
+.aligne_euro3{padding-left: 13.5%;}
+.aligne_euro4{padding-left: 6%;}
+.aligne_euro5{padding-left: 2.5%;}
+.aligne_euro6{padding-left: 51%;}
+.aligne_euro7{padding-left: 62.5%;}
+.aligne_euro8{padding-left: 0.8%;}
+.aligne_euro9{padding-left: 13%;}
 
 header p{
+    font-family: 'Montserrat', Impact, Arial, sans-serif;
+    font-weight: bold;
     flex-wrap: wrap;
     margin-top: 0%;
     margin-bottom: 0%;
     font-size:450%;
-    font-weight: bold;
     color: yellow;
 }
-.note2_page4{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+
 .div_foot--page4{
+  font-family: 'Montserrat', Impact, Arial, sans-serif;
+  font-weight: bold;
   background-color: #158fae;
   margin-left: 10%;
   margin-right: 10%;
   padding-right: 3%;
   padding-left: 3%;
-  font-size: 300%;
+  font-size: 250%;
   color: yellow;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  position: absolute; bottom: -40px; left: 0; right: 0; 
+  position: absolute; bottom: -54px; left: 0; right: 0; 
 }
 @font-face{ 
-    font-family: 'Devonshire-Regular';
-   /* src:url(Felipa.eot) format('eot');
-    src:url(Felipa.svg) format('svg');
-    src:url(Felipa.woff) format('woff');*/
+    font-family: "Montserrat";
+    src:url(Montserrat.eot) format('eot');
+    src:url(Montserrat.svg) format('svg');
+    src:url(Montserrat.woff) format('woff');
+    src:url(Montserrat.ttf) format('ttf');
+    } 
+@font-face{ 
+    font-family: "Devonshire-Regular";
     src:local(Devonshire-Regular) format('ttf');
     } 

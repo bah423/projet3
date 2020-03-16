@@ -9,14 +9,20 @@ header{
     margin-top: 0%;
     margin-bottom: 0%;
 }
-.note_page2{ 
+@font-face{
+    font-family: Croissant One;
+    src: local("Croissant One");
+}
+.note_page2{
+    font-family: Croissant One; 
+    margin-top: 6%;
     text-align: center;
-    font-size: 270%;
+    font-size: 150%;
     font-weight: bold;
 }
 .conteneur_page2{
     width:60%;
-    height: 640px;
+    height: 580px;
     background-color: #F4F6F7;
     margin-left: 20%;
     margin-right: 20%;
@@ -29,7 +35,7 @@ header{
 }
 
 .degrade{
-    font-size: 50px;
+    font-size: 150%;
     background: -webkit-gradient(linear, left top, right top, from(#E67E22), to(#510AD5));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -44,11 +50,7 @@ header{
 .conteneur_menu3--page2{
     color:#510AD5;
 }
-
-
-.note_page2{ 
-    margin-top: 6%;
-}
+.note_page2{margin-top: 6%;}
 .prelude{ 
     font-size: 150%; 
     font-weight: bold;
@@ -82,6 +84,8 @@ header{
 .aligne5{padding-left: 15.5%;}
 .aligne6{padding-left: 6%;}
 header p{
+    font-family: 'Montserrat', Impact, Arial, sans-serif;
+    font-weight: bold;
     margin-top: 0%;
     margin-bottom: 0%;
     font-size:450%;
@@ -90,18 +94,31 @@ header p{
 }
 
 .div_foot--page2{
+  font-family: 'Montserrat', Impact, Arial, sans-serif;
+  font-weight: bold;
   background-color: #158fae;
   margin-left: 10%;
   margin-right: 10%;
   padding-right: 3%;
   padding-left: 3%;
-  font-size: 50px;
+  font-size: 250%;
   color: yellow;
   display: flex;
   justify-content: space-between;
-  position: absolute; bottom: 0px; left: 0; right: 0;
+  position: absolute; bottom: -46px; left: 0; right: 0;
   
 }
+@font-face{
+    font-family: Croissant One;
+    src: local("Croissant One");
+}
+@font-face{ 
+    font-family: "Montserrat";
+    src:url(Montserrat.eot) format('eot');
+    src:url(Montserrat.svg) format('svg');
+    src:url(Montserrat.woff) format('woff');
+    src:url(Montserrat.ttf) format('ttf');
+    } 
 @font-face{
     font-family: "Croissant+One";
     src: url(https://fonts.google.com/specimen/Croissant+One?query=croiss);
