@@ -140,6 +140,33 @@ a {
   justify-content: space-between;
 }
 
+@font-face {
+  font-family: Devonshire;
+  src: local("Devonshire");
+}
+.note_enchante {
+  font-family: Devonshire;
+  font-weight: bold;
+  font-size: 150%;
+  flex-wrap: wrap;
+  color: black;
+}
+
+@font-face {
+  font-family: Tillana;
+  src: local("Tillana");
+  src: local("Tillana Medium");
+  src: local("Tillana SemiBold");
+  src: local("Tillana ExtraBold");
+}
+.div_menu1 {
+  font-family: Tillana Medium;
+  font-weight: bold;
+  font-size: 150%;
+  flex-wrap: wrap;
+  color: black;
+}
+
 .menu1 {
   background-color: rgba(240, 128, 128, 0.466);
   font-size: 20px;
@@ -158,6 +185,13 @@ a {
 }
 .menu1:hover {
   background-color: rgba(235, 82, 82, 0.466);
+}
+
+.div_menu2 {
+  color: chocolate;
+  font-size: 160%;
+  font-weight: bold;
+  margin-top: 4%;
 }
 
 .menu2 {
@@ -181,12 +215,38 @@ a {
   background-color: rgba(201, 170, 170, 0.329);
 }
 
+@font-face {
+  font-family: Redressed;
+  src: local("Redressed");
+}
 .degrade1 {
+  font-family: Redressed;
   font-size: 120%;
   font-weight: bold;
   background: -webkit-gradient(linear, left top, right top, from(#E67E22), to(#510AD5));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@font-face {
+  font-family: Dancing Script;
+  src: local("Dancing Script");
+}
+.delice {
+  background: -webkit-gradient(linear, left top, right top, from(#0A41E1), to(#0ECFDB));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Dancing Script;
+  font-weight: bold;
+  font-size: 120%;
+  flex-wrap: wrap;
+}
+
+.div_menu3 {
+  color: #1d2cb3;
+  font-size: 160%;
+  font-weight: bold;
+  margin-top: 4%;
 }
 
 .menu3 {
@@ -227,6 +287,27 @@ a {
 }
 .menu4:hover {
   background-color: #cee1f3;
+}
+
+@font-face {
+  font-family: Dancing Script;
+  src: local("Dancing Script");
+}
+.palette {
+  background: -webkit-gradient(linear, left top, right top, from(#04B314), to(#F1F861));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Dancing Script;
+  font-weight: bold;
+  font-size: 120%;
+  flex-wrap: wrap;
+}
+
+.div_menu4 {
+  color: #00802b;
+  font-size: 160%;
+  font-weight: bold;
+  margin-top: 4%;
 }
 
 .contact a {
@@ -295,11 +376,14 @@ a {
   src: url(Kalam.ttf) format("ttf");
 }
 @font-face {
-  font-family: "Devonshire";
-  src: local(Devonshire-Regular) format("ttf");
-  /* src:local(Devonshire.svg) format('svg');
-   src:local(Devonshire.woff) format('woff');
-   src:local(Devonshire.ttf) format('ttf');*/
+  font-family: Devonshire;
+  src: local("Devonshire") format("ttf");
+  src: local("Devonshire.woff2") format("ttf");
+}
+@font-face {
+  font-family: Tillana;
+  src: local("Tillana") format("ttf");
+  src: local("Tillana.woff2") format("ttf");
 }
 @font-face {
   font-family: "Amita";
