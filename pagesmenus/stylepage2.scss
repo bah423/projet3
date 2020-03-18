@@ -1,0 +1,171 @@
+body{
+    position: relative;
+}
+header{
+    background-color: rgb(21, 143, 174);
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+@font-face{
+    font-family: Croissant One;
+    src: local("Croissant One");
+}
+.note_page2{
+    font-family: Croissant One; 
+    margin-top: 6%;
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+}
+.conteneur_page2{
+    width:60%;
+    height: 580px;
+    background-color: #FEF9E7;
+    margin-left: 20%;
+    margin-right: 20%;
+    overflow: scroll;
+    text-align: left;
+    margin-bottom: 30%;
+    padding-bottom: 2%;
+    flex-wrap: wrap;
+    
+}
+
+.degrade{
+    font-size: 150%;
+    background: -webkit-gradient(linear, left top, right top, from(#E67E22), to(#510AD5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.flech_gauche1 img {
+    margin-top: 2%;
+    width: 30%;
+    height: 34px;
+    padding-left: 5%;
+   
+}
+.flech_droite1 img {
+    margin-top: 2%;
+    width: 30%;
+    height: 22px;
+    padding-right: 3%;
+    padding-left: 2%;
+}
+.flech_gauche2 img {
+    margin-top: 2%;
+    width: 30%;
+    height: 25px;
+    padding-left: 5%;
+   
+}
+.flech_droite2 img {
+    margin-top: 2%;
+    width: 30%;
+    height: 25px;
+    padding-right: 3%;
+    padding-left: 2%;
+}
+.flech_gauche3 img {
+    margin-top: 2%;
+    width: 30%;
+    height: 22px;
+    padding-left: 5%;
+   
+}
+.flech_droite3 img {
+    margin-top: 2%;
+    width: 30%;
+    height: 22px;
+    padding-right: 3%;
+    padding-left: 2%;
+}
+
+.conteneur_menu1--page2{
+    color:#E67E22;
+}
+.conteneur_menu2--page2{
+    color:#A207A2;
+}
+.conteneur_menu3--page2{
+    color:#510AD5;
+}
+.note_page2{margin-top: 6%;}
+.prelude{ 
+    font-size: 150%; 
+    font-weight: bold;
+    margin-top: 7%;
+     text-align: center;
+    }
+.menu1_page2{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    padding-left: 16%;
+    margin-top:  0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px; 
+}
+.menu1_page2 p {
+    font-size: 120%;
+    margin:1%;
+    text-align: left;
+}
+.menu2_page2{
+    text-align: left;
+    padding-left: 16%;
+    font-size: 120%;
+}
+.aligne1{padding-left: 25.5%;}
+.aligne2{padding-left: 42%;}
+.aligne3{padding-left: 44.5%;}
+.aligne4{padding-left: 9%;}
+.aligne5{padding-left: 15.5%;}
+.aligne6{padding-left: 6%;}
+header p{
+    font-family: 'Montserrat', Impact, Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size:450%;
+    font-weight: bold;
+    color: yellow;
+}
+
+.div_foot--page2{
+  font-family: 'Montserrat', Impact, Arial, sans-serif;
+  font-weight: bold;
+  background-color: #158fae;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-right: 3%;
+  padding-left: 3%;
+  font-size: 250%;
+  color: yellow;
+  display: flex;
+  justify-content: space-between;
+  position: absolute; bottom: -46px; left: 0; right: 0;
+  
+}
+@font-face{
+    font-family: Croissant One;
+    src: local("Croissant One");
+}
+@font-face{ 
+    font-family: "Montserrat";
+    src:url(Montserrat.eot) format('eot');
+    src:url(Montserrat.svg) format('svg');
+    src:url(Montserrat.woff) format('woff');
+    src:url(Montserrat.ttf) format('ttf');
+    } 
+@font-face{
+    font-family: "Croissant+One";
+    src: url(https://fonts.google.com/specimen/Croissant+One?query=croiss);
+    src:url(Croissant+One.eot) format('eot');
+    src:url(Croissant+One.svg) format('svg');
+    src:url(Croissant+One.woff) format('woff');
+    src:local(CroissantOne-Regular) format('ttf');
+}
