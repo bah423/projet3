@@ -1,14 +1,18 @@
 body {
+  margin: 0px;
+  padding: 0px;
   position: relative;
 }
 
 header {
   background-color: #158fae;
-  margin-left: 10%;
-  margin-right: 10%;
   text-align: center;
   margin-top: 0%;
   margin-bottom: 0%;
+}
+
+a {
+  text-decoration: none;
 }
 
 @font-face {
@@ -50,96 +54,104 @@ header {
 .conteneur_page1 {
   width: 60%;
   height: 490px;
-  background-color: #f6ddd9;
+  background-color: #f5deda;
   margin-left: 20%;
   margin-right: 20%;
   overflow: scroll;
   text-align: left;
-  margin-bottom: 30%;
   padding-bottom: 2%;
   flex-wrap: wrap;
 }
 
 .flech_gauche1 img {
   margin-top: 2%;
-  width: 30%;
-  height: 22px;
+  margin-right: 80px;
   padding-left: 2%;
-  transform: translateX(-25px);
 }
 
 .flech_droite1 img {
-  margin-top: 2%;
-  width: 30%;
-  height: 22px;
+  margin-top: 3%;
+  margin-left: 80px;
   padding-right: 2%;
   padding-left: 2%;
-  transform: translateX(25px);
 }
 
 .flech_gauche2 img {
   margin-top: 2%;
-  width: 30%;
-  height: 25px;
+  margin-right: 50px;
   padding-left: 2%;
 }
 
 .flech_droite2 img {
-  margin-top: 2%;
-  width: 30%;
-  height: 25px;
+  margin-top: 3%;
+  margin-left: 50px;
   padding-right: 2%;
   padding-left: 2%;
 }
 
 .flech_gauche3 img {
   margin-top: 2%;
-  width: 27%;
-  height: 25px;
+  margin-right: 30px;
   padding-left: 2%;
 }
 
 .flech_droite3 img {
-  margin-top: 2%;
-  width: 27%;
-  height: 25px;
+  margin-top: 3%;
+  margin-left: 30px;
   padding-right: 2%;
   padding-left: 2%;
 }
 
 .prelude {
+  display: flex;
   font-family: Segoe Print;
-  font-size: 170%;
+  font-size: 150%;
   font-weight: bold;
   margin-top: 3%;
   margin-bottom: 1.5%;
   text-align: center;
+  justify-content: center;
 }
 
-.prelu1 {
-  animation-name: anim_bas;
-  animation-duration: 1s;
-  animation-delay: 0.5s;
-}
-
-.prelu1:hover {
-  border-bottom: solid 3px black;
+.prelu1::after {
+  content: "";
+  display: block;
+  width: 0%;
+  padding: 0px;
+  border-bottom: solid 4px black;
   transition: 1s;
-  width: 50px;
 }
 
-@keyframes anim_bas {
-  0% {
-    transform: scaleX(0);
-  }
-  50% {
-    transform: scaleX(0.6);
-    opacity: 1;
-  }
-  100% {
-    transform: scaleX(1);
-  }
+.prelu1:hover::after {
+  width: 100%;
 }
+
+.prelu2::after {
+  content: "";
+  display: block;
+  width: 0%;
+  padding: 0px;
+  border-bottom: solid 4px black;
+  transition: 1s;
+}
+
+.prelu2:hover::after {
+  width: 100%;
+}
+
+.prelu3::after {
+  content: "";
+  display: block;
+  width: 0%;
+  padding: 0px;
+  border-bottom: solid 4px black;
+  transition: 1s;
+}
+
+.prelu3:hover::after {
+  width: 100%;
+}
+
 .menu1_page1 {
   font-family: Segoe Print;
   font-size: 120%;
@@ -222,18 +234,54 @@ header p {
   font-family: "Montserrat", Impact, Arial, sans-serif;
   font-weight: bold;
   background-color: #158fae;
-  margin-left: 10%;
-  margin-right: 10%;
   padding-right: 3%;
   padding-left: 3%;
   font-size: 250%;
   color: yellow;
   display: flex;
   justify-content: space-between;
-  position: absolute;
-  bottom: -45px;
+  position: fixed;
+  bottom: 0px;
   left: 0;
   right: 0;
+}
+
+.mlegales a {
+  color: yellow;
+}
+
+.contact a {
+  color: yellow;
+}
+
+.contact:hover {
+  background: #0000FF;
+  animation: secouer 500ms;
+  animation-iteration-count: 3;
+  border-radius: 15px;
+}
+@keyframes secouer {
+  0% {
+    transform: translateX(2%);
+  }
+  100% {
+    transform: translateX(-2%);
+  }
+}
+
+.mlegales:hover {
+  background: #0000FF;
+  animation: secouer 500ms;
+  animation-iteration-count: 3;
+  border-radius: 15px;
+}
+@keyframes secouer {
+  0% {
+    transform: translateX(2%);
+  }
+  100% {
+    transform: translateX(-2%);
+  }
 }
 
 @font-face {

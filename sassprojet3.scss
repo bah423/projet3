@@ -1,11 +1,11 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
 
 /* Pour les écrans de taille maximale de 320px*/
 @media only screen and (max-width: 320px){
-    
-    body{
-        position: relative;
-        border: solid 3px black;
-    }
     header{
         background-color: rgb(21, 143, 174);
         text-align: center;
@@ -367,10 +367,6 @@
 
 /* la media query  pour une largeur comprise entre 321px et 375px*/
 @media only screen and (min-width: 321px) and (max-width: 375px){
-    body{
-        position: relative;
-        border: solid 3px black;
-    }
     header{
         background-color: rgb(21, 143, 174);
         text-align: center;
@@ -730,10 +726,6 @@
 }
 /* la media query  pour une largeur comprise entre 376px et 769px*/
 @media only screen and (min-width: 376px) and (max-width: 766px){
-    body{
-        position: relative;
-        border: solid 3px black;
-    }
     header{
         background-color: rgb(21, 143, 174);
         text-align: center;
@@ -1093,10 +1085,6 @@
 }
 /*Pour les écrans de taille comprise entre 770px et 1024px*/
 @media only screen and (min-width: 767px) and (max-width: 1024px){
-    body {
-        position: relative;
-        border: solid 3px black;
-      }
     
       header {
         background-color: #158fae;
@@ -1467,10 +1455,6 @@
 }
 /* la media query  pour une largeur comprise entre 1025px et 1299px*/
 @media only screen and (min-width: 1025px) and (max-width:1299px){
-    body{
-        position: relative;
-        border: solid 3px black;
-    }
     header{
         background-color: rgb(21, 143, 174);
         text-align: center;
@@ -1826,10 +1810,6 @@
 
  /* la media query  pour une largeur minimale de 1300px*/
 @media only screen and (min-width: 1300px){
-    body{
-        position: relative;
-        border: solid 3px black;
-    }
     header{
         background-color: rgb(21, 143, 174);
         text-align: center;
@@ -1860,7 +1840,6 @@
     }
     
     .conteneur_menu{
-       /* transform: translateX(140px);*/
         margin: 0%;
         padding: 0%;
         display: flex;
@@ -1889,7 +1868,6 @@
     }
     
     .proch{
-        /*transform: translateX(-40px);*/
         font-family: 'Montserrat', Impact, Arial, sans-serif;
         font-weight: bold;
         text-align: center;
@@ -1899,8 +1877,8 @@
         border-radius: 10px;
         margin-left: 20%;
         margin-right: 20%;
-        margin-top: 3%;
-        margin-bottom: 3%;
+        margin-top: 1%;
+        margin-bottom: 5%;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;

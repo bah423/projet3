@@ -1,12 +1,12 @@
 body {
+  margin: 0px;
+  padding: 0px;
   position: relative;
 }
 
 header {
   flex-wrap: wrap;
   background-color: #158fae;
-  margin-left: 10%;
-  margin-right: 10%;
   text-align: center;
   margin-top: 0%;
   margin-bottom: 0%;
@@ -23,7 +23,7 @@ header {
 .note_page4 {
   font-family: Kaushan Script;
   src: local(Devonshire-Regular) format("ttf");
-  background: -webkit-gradient(linear, left top, right top, from(#04B314), to(#F7DC6F));
+  background: -webkit-gradient(linear, left top, right top, from(#04B314), to(#eeaf1d));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -35,67 +35,106 @@ header {
 .conteneur_page4 {
   width: 60%;
   height: 575px;
+  box-shadow: 3px 3px 3px 3px #a1a5a5;
   background-color: white;
   margin-left: 20%;
   margin-right: 20%;
+  margin-top: 0.5%;
   overflow: scroll;
-  margin-bottom: 30%;
   padding-bottom: 2%;
   flex-wrap: wrap;
 }
 
 .flech_gauche1 img {
   margin-top: 2%;
-  width: 39%;
-  height: 25px;
+  margin-right: 110px;
   padding-left: 2%;
 }
 
 .flech_droite1 img {
   margin-top: 2%;
-  width: 39%;
-  height: 25px;
+  margin-left: 110px;
   padding-right: 2%;
   padding-left: 2%;
 }
 
 .flech_gauche2 img {
   margin-top: 2%;
-  width: 33%;
-  height: 25px;
+  margin-right: 55px;
   padding-left: 2%;
+  padding-right: 2%;
 }
 
 .flech_droite2 img {
   margin-top: 2%;
-  width: 33%;
-  height: 25px;
+  margin-left: 55px;
   padding-right: 2%;
   padding-left: 2%;
 }
 
 .flech_gauche3 img {
   margin-top: 2%;
-  width: 32%;
-  height: 25px;
+  margin-right: 45px;
   padding-left: 2%;
+  padding-right: 2%;
 }
 
 .flech_droite3 img {
   margin-top: 2%;
-  width: 32%;
-  height: 25px;
+  margin-left: 45px;
   padding-right: 2%;
   padding-left: 2%;
 }
 
 .prelude {
+  display: flex;
+  justify-content: center;
   font-family: Segoe Print;
   text-align: center;
   font-size: 150%;
   font-weight: bold;
   margin-top: 6%;
   margin-bottom: 2%;
+}
+
+/*Animations des bordures du bas des menus*/
+.prel1::after {
+  content: "";
+  display: block;
+  width: 0%;
+  padding: 0px;
+  border-bottom: solid 4px black;
+  transition: 1s;
+}
+
+.prel1:hover::after {
+  width: 100%;
+}
+
+.prel2::after {
+  content: "";
+  display: block;
+  width: 0%;
+  padding: 0px;
+  border-bottom: solid 4px black;
+  transition: 1s;
+}
+
+.prel2:hover::after {
+  width: 100%;
+}
+
+.prel3::after {
+  content: "";
+  display: block;
+  width: 0%;
+  padding: 0px;
+  border-bottom: solid 4px black;
+  transition: 1s;
+}
+
+.prel3:hover::after {
+  width: 100%;
 }
 
 .menu1_page4 {
@@ -126,38 +165,47 @@ header {
 
 .aligne_euro1 {
   padding-left: 34%;
+  font-weight: bold;
 }
 
 .aligne_euro2 {
   padding-left: 24%;
+  font-weight: bold;
 }
 
 .aligne_euro3 {
   padding-left: 13.5%;
+  font-weight: bold;
 }
 
 .aligne_euro4 {
   padding-left: 6%;
+  font-weight: bold;
 }
 
 .aligne_euro5 {
   padding-left: 2.5%;
+  font-weight: bold;
 }
 
 .aligne_euro6 {
-  padding-left: 51%;
+  padding-left: 50%;
+  font-weight: bold;
 }
 
 .aligne_euro7 {
   padding-left: 62.5%;
+  font-weight: bold;
 }
 
 .aligne_euro8 {
   padding-left: 0.8%;
+  font-weight: bold;
 }
 
 .aligne_euro9 {
   padding-left: 13%;
+  font-weight: bold;
 }
 
 header p {
@@ -174,8 +222,6 @@ header p {
   font-family: "Montserrat", Impact, Arial, sans-serif;
   font-weight: bold;
   background-color: #158fae;
-  margin-left: 10%;
-  margin-right: 10%;
   padding-right: 3%;
   padding-left: 3%;
   font-size: 250%;
@@ -183,10 +229,50 @@ header p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  position: absolute;
-  bottom: -54px;
+  position: fixed;
+  bottom: 0px;
   left: 0;
   right: 0;
+}
+
+.mlegales a {
+  text-decoration: none;
+  color: yellow;
+}
+
+.contact a {
+  text-decoration: none;
+  color: yellow;
+}
+
+.contact:hover {
+  background: #0000FF;
+  animation: secouer 500ms;
+  animation-iteration-count: 3;
+  border-radius: 15px;
+}
+@keyframes secouer {
+  0% {
+    transform: translateX(2%);
+  }
+  100% {
+    transform: translateX(-2%);
+  }
+}
+
+.mlegales:hover {
+  background: #0000FF;
+  animation: secouer 500ms;
+  animation-iteration-count: 3;
+  border-radius: 15px;
+}
+@keyframes secouer {
+  0% {
+    transform: translateX(2%);
+  }
+  100% {
+    transform: translateX(-2%);
+  }
 }
 
 @font-face {
