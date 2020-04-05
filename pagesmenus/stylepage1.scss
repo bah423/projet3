@@ -1,23 +1,17 @@
 body{
+    margin: 0px;
+    padding: 0px;
     position: relative;
-}
+} 
+
 header{
     background-color: rgb(21, 143, 174);
     text-align: center;
     margin-top: 0%;
     margin-bottom: 0%;
 }
-a{
-    text-decoration: none;
-}
-@font-face {
-    font-family: Dancing Script;
-    src: local("Dancing Script");
-  }
-  @font-face{
-    font-family: Segoe Print;
-    src: local("Segoe Print");
-}
+header p{font-size: 5em;}
+
 .fa-music{
     color:#EC7063;
 }
@@ -25,33 +19,28 @@ a{
     margin: 1% 1%;
     text-align: center;
     font-family: 'Montserrat', Impact, Arial, sans-serif;
-    font-size: 320%;
+    font-size: 3.2em;
     font-weight: bold;
 }
-@font-face{ 
-    font-family: Devonshire;
-    src:local("Devonshire");
-}
+
 .note_page1{ 
     font-family: Devonshire;
     text-align: center;
-    font-size: 250%;
+    font-size: 2.5em;
     font-weight: bold;
     margin-top: 4%;
 }
-@font-face{
-    font-family: Courgette;
-    src: local("Courgette")
-}
+
 .conteneur_page1{ 
     width:60%;
-    height: 490px;
+    height: auto;
     background-color: rgb(245, 222, 218);
     margin-left: 20%;
     margin-right: 20%;
     overflow: scroll;
     text-align: left;
     padding-bottom: 2%;
+    margin-bottom: 5%;
     flex-wrap: wrap;
     
 }
@@ -93,7 +82,7 @@ a{
 .prelude{
     display: flex; 
     font-family: Segoe Print;
-    font-size: 150%; 
+    font-size: 1.5em; 
     font-weight: bold; 
     margin-top: 3%; 
     margin-bottom: 1.5%;
@@ -140,20 +129,26 @@ a{
 }
 
 .menu1_page1{
+    width: 92%;
+    justify-content: space-between;
     font-family: Segoe Print;
-    font-size: 120%;
+    font-size: 1.2em;
     text-align: left;
     display: flex;
     flex-direction: row;
-    padding-left: 10%;
+    padding-left: 5%;
+    padding-right: 0%;
 }
 .menu2_page1{
+    width: 92%;
+    justify-content: space-between;
     font-family: Segoe Print;
-    font-size: 120%;
+    font-size: 1.2em;
     text-align: left;
     display: flex;
     flex-direction: row;
-    padding-left: 10%;
+    padding-left: 5%;
+    padding-right: 0%;
 }
 .menu1_page1 p {
       margin:0.5%;
@@ -161,20 +156,20 @@ a{
 .menu2_page1 p {
     margin: 0.5%;
 }
-.align_euro1{padding-left: 8.8%;font-weight: bold;}
-.align_euro2{padding-left: 23.5%;font-weight: bold;}
-.align_euro3{padding-left: 9.5%;font-weight: bold;}
-.align_euro4{padding-left: 1.5%;font-weight: bold;}
-.align_euro5{padding-left: 1.5%;font-weight: bold;}
-.align_euro6{padding-left: 26.5%;font-weight: bold;}
-.align_euro7{padding-left: 8.2%;font-weight: bold;}
+.align_euro1{padding-left: 0%;font-weight: bold;}
+.align_euro2{padding-left: 0%;font-weight: bold;}
+.align_euro3{padding-left: 0%;font-weight: bold;}
+.align_euro4{padding-left: 0%;font-weight: bold;}
+.align_euro5{padding-left: 0%;font-weight: bold;}
+.align_euro6{padding-left: 0%;font-weight: bold;}
+.align_euro7{padding-left: 0%;font-weight: bold;}
 
 header p{
     font-family: 'Montserrat', Impact, Arial, sans-serif;
     font-weight: bold;
     margin-top: 0%;
     margin-bottom: 0%;
-    font-size:450%;
+    font-size:4.5em;
     font-weight: bold;
     color: yellow;
 }
@@ -182,7 +177,7 @@ header p{
     margin-top: 2%;
     text-align: center;
     font-family: Devonshire;
-    font-size: 260%;
+    font-size: 2.5em;
 }
 
 .div_foot--1{
@@ -191,16 +186,18 @@ header p{
   background-color: #158fae;
   padding-right: 3%;
   padding-left: 3%;
-  font-size: 250%;
+  font-size: 2.5em;
   color: yellow;
   display: flex;
   justify-content: space-between;
   position: fixed; bottom: 0px; left: 0; right: 0;
 }
 .mlegales a{
+    text-decoration: none;
     color: yellow;
 }
 .contact a{
+    text-decoration: none;
     color: yellow;
 }
 .contact{
@@ -229,11 +226,539 @@ header p{
 @keyframes secouer {
     0%{
         transform:translateX(2%);
-    }
+      }
     100%{
         transform:translateX(2% *-1);
+     } 
+    }
+  }
+
+/*La media query de largeur maximale 1299px*/
+@media screen and (max-width:1299px){
+    .conteneur_page1{ 
+        width:80%;
+        height: auto;
+        background-color: rgb(245, 222, 218);
+        margin-left: 10%;
+        margin-right: 10%;
+        overflow: scroll;
+        text-align: left;
+        padding-bottom: 2%;
+        margin-bottom: 5%;
+        flex-wrap: wrap;
+        
+    }
+    .menu1_page1{
+        width: 95%;
+        justify-content: space-between;
+        font-family: Segoe Print;
+        font-size: 1.2em;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        padding-left: 3%;
+        padding-right: 2%;
+    }
+    .menu2_page1{
+        width: 95%;
+        justify-content: space-between;
+        font-family: Segoe Print;
+        font-size: 1.2em;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        padding-left: 3%;
+        padding-right: 2%;
     } 
+
+    .flech_gauche1 img {
+        margin-top: 2%;
+        margin-right: 65px;
+        padding-left: 2%;
+    
+    }
+    .flech_droite1 img {
+        margin-top: 3%;
+        margin-left: 65px;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    .flech_gauche2 img {
+        margin-top: 2%;
+        margin-right: 45px;
+        padding-left: 2%;
+    }
+    .flech_droite2 img {
+        margin-top: 3%;
+        margin-left: 45px;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    .flech_gauche3 img {
+        margin-top: 2%;
+        margin-right: 35px;
+        padding-left: 2%;
+    }
+    .flech_droite3 img {
+        margin-top: 3%;
+        margin-left: 35px;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    
 }
+/*La média query de largeur maximale 1024px*/
+  @media  screen and (max-width: 1024px){
+   
+    header p{
+        font-family: 'Montserrat', Impact, Arial, sans-serif;
+        font-weight: bold;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        font-size: 3.5em;
+        font-weight: bold;
+        color: yellow;
+    }
+    
+    .note--1{
+        margin: 1% 1%;
+        text-align: center;
+        font-family: 'Montserrat', Impact, Arial, sans-serif;
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+    
+    .note_page1{ 
+        font-family: Devonshire;
+        text-align: center;
+        font-size: 2.5em;
+        font-weight: bold;
+        margin-top: 2%;
+    }
+    
+    .conteneur_page1{
+        width: 100%; 
+        height: auto;
+        margin-left: 0px;
+        margin-right: 0px;
+        background-color: rgb(245, 222, 218);
+        margin-bottom: 7%;
+        overflow: scroll;
+        text-align: left;
+        padding-bottom: 2%;
+        flex-wrap: wrap;
+        
+    }
+    .flech_gauche1 img {
+        width: 96%;
+        margin-top: 2%;
+        margin-right: 30px;
+        padding-left: 2%;
+    
+    }
+    .flech_droite1 img {
+        width: 96%;
+        margin-top: 3%;
+        margin-left: 0px;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    .flech_gauche2 img {
+        width:96%;
+        margin-top: 2%;
+        margin-right: 0px;
+        padding-left: 2%;
+    }
+    .flech_droite2 img {
+        width: 96%;
+        margin-top: 3%;
+        margin-left: 0px;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    .flech_gauche3 img {
+        width: 96%;
+        margin-top: 2%;
+        margin-right: 0px;
+        padding-left: 2%;
+    }
+    .flech_droite3 img {
+        width: 96%;
+        margin-top: 3%;
+        margin-left: 0px;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    
+    .prelude{
+        display: flex; 
+        font-family: Segoe Print;
+        font-size: 25px; 
+        font-weight: bold; 
+        margin-top: 3%; 
+        margin-bottom: 1.5%;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    
+    .menu1_page1{
+        width: 97%;
+        font-family: Segoe Print;
+        font-size: 15px;
+        justify-content: space-between;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        padding-left: 1%;
+        padding-right: 2%;
+    }
+    .menu2_page1{
+        width: 97%;
+        justify-content: space-between;
+        font-family: Segoe Print;
+        font-size: 15px;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        padding-left: 1%;
+    }
+    .align_euro1{padding-left: 0%;font-weight: bold;}
+    .align_euro2{padding-left: 0%;font-weight: bold;}
+    .align_euro3{padding-left: 0%;font-weight: bold;}
+    .align_euro4{padding-left: 0%;font-weight: bold;}
+    .align_euro5{padding-left: 0%;font-weight: bold;}
+    .align_euro6{padding-left: 0%;font-weight: bold;}
+    .align_euro7{padding-left: 0%;font-weight: bold;}
+    
+    
+    .div_foot--1{
+      font-family: 'Montserrat', Impact, Arial, sans-serif;
+      font-weight: bold;
+      background-color: #158fae;
+      padding-right: 3%;
+      padding-left: 3%;
+      font-size: 30px;
+      color: yellow;
+      display: flex;
+      justify-content: space-between;
+      position: fixed; bottom: 0px; left: 0; right: 0;
+    }
+    
+ }
+
+/*La media query de largeur maximale 500px*/
+@media screen and (max-width: 600px) {
+    
+    header p{
+        font-family: 'Montserrat', Impact, Arial, sans-serif;
+        font-weight: bold;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        font-size: 2.5em;
+        font-weight: bold;
+        color: yellow;
+    }
+    
+    .note--1{
+        margin: 1% 1%;
+        text-align: center;
+        font-family: 'Montserrat', Impact, Arial, sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    
+    .note_page1{ 
+        font-family: Devonshire;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-top: 4%;
+    }
+    
+    .conteneur_page1{ 
+        width: 100%;
+        height: auto;
+        background-color: rgb(245, 222, 218);
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 6%;
+        overflow: scroll;
+        text-align: left;
+        padding-bottom: 2%;
+        flex-wrap: wrap;
+        
+    }
+    .flech_gauche1 img {
+        width: 90%;
+        margin-top: 2%;
+        margin-right: 0px;
+        padding-left: 2%;
+    
+    }
+    .flech_droite1 img {
+        width: 90%;
+        margin-top: 3%;
+        margin-left: 0px;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    .flech_gauche2 img {
+        width: 90%;
+        margin-top: 2%;
+        margin-right: 0px;
+        padding-left: 2%;
+    }
+    .flech_droite2 img {
+        width: 90%;
+        margin-top: 3%;
+        margin-left: 0px;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    .flech_gauche3 img {
+        width: 90%;
+        margin-top: 2%;
+        margin-right: 0;
+        padding-left: 2%;
+    }
+    .flech_droite3 img {
+        width: 90%;
+        margin-top: 3%;
+        margin-left: 0;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    
+    .prelude{
+        display: flex; 
+        font-family: Segoe Print;
+        font-size: 100%; 
+        font-weight: bold; 
+        margin-top: 3%; 
+        margin-bottom: 1.5%;
+        text-align: center;
+        justify-content: center;
+    }
+  
+    .menu1_page1{
+        width: 98%;
+        font-family: Segoe Print;
+        font-size: 12px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0%;
+    }
+    .menu2_page1{
+        width: 98%;
+        font-family: Segoe Print;
+        font-size: 12px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0%;
+    }
+    .align_euro1{padding-left: 0%;font-weight: bold;}
+    .align_euro2{padding-left: 0%;font-weight: bold;}
+    .align_euro3{padding-left: 0%;font-weight: bold;}
+    .align_euro4{padding-left: 0%;font-weight: bold;}
+    .align_euro5{padding-left: 0%;font-weight: bold;}
+    .align_euro6{padding-left: 0%;font-weight: bold;}
+    .align_euro7{padding-left: 0%;font-weight: bold;}
+    
+    .note2_page1{
+        margin-top: 2%;
+        text-align: center;
+        font-family: Devonshire;
+        font-size: .9em;
+    }
+    
+    .div_foot--1{
+      font-family: 'Montserrat', Impact, Arial, sans-serif;
+      font-weight: bold;
+      background-color: #158fae;
+      padding-right: 3%;
+      padding-left: 3%;
+      font-size: .9em;
+      color: yellow;
+      display: flex;
+      justify-content: space-between;
+      position: fixed; bottom: 0px; left: 0; right: 0;
+    }
+   
+ }
+/*La media query de largeur maximale 320px*/
+@media only screen and (max-width: 320px){
+    header{
+        background-color: rgb(21, 143, 174);
+        text-align: center;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    header p{
+        font-family: 'Montserrat', Impact, Arial, sans-serif;
+        font-weight: bold;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        font-size:200%;
+        font-weight:bold;
+        color: yellow;
+    }
+    
+    .fa-music{
+        color:#EC7063;
+    }
+    .note--1{
+        margin: 1% 1%;
+        text-align: center;
+        font-family: 'Montserrat', Impact, Arial, sans-serif;
+        font-size: 120%;
+        font-weight: bold;
+    }
+    
+    .note_page1{ 
+        font-family: Devonshire;
+        text-align: center;
+        font-size: 130%;
+        font-weight: bold;
+        margin-top: 4%;
+    }
+    
+    .conteneur_page1{ 
+        width: 100%;
+        height: auto;
+        background-color: rgb(245, 222, 218);
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 6%;
+        overflow: scroll;
+        text-align: left;
+        padding-bottom: 2%;
+        flex-wrap: wrap;
+        
+    }
+    .flech_gauche1 img {
+        width: 75px;
+        margin-top: 2%;
+        margin-right: 18px;
+        padding-left: 2%;
+    
+    }
+    .flech_droite1 img {
+        width: 75px;
+        margin-top: 3%;
+        margin-left: 18px;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    .flech_gauche2 img {
+        width: 75px;
+        margin-top: 2%;
+        margin-right: 0px;
+        padding-left: 2%;
+    }
+    .flech_droite2 img {
+        width: 75px;
+        margin-top: 3%;
+        margin-left: 0px;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    .flech_gauche3 img {
+        width: 75px;
+        margin-top: 2%;
+        margin-right: 0;
+        padding-left: 2%;
+    }
+    .flech_droite3 img {
+        width: 75px;
+        margin-top: 3%;
+        margin-left: 0;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    
+    .prelude{
+        display: flex; 
+        font-family: Segoe Print;
+        font-size: 100%; 
+        font-weight: bold; 
+        margin-top: 3%; 
+        margin-bottom: 1.5%;
+        text-align: center;
+        justify-content: center;
+    }
+    .menu1_page1{
+        width: 95%;
+        font-family: Segoe Print;
+        font-size: 90%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding-left: 2%;
+    }
+    .menu2_page1{
+        width: 95%;
+        font-family: Segoe Print;
+        font-size: 90%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding-left: 2%;
+    }
+    .menu1_page1 p {
+          margin:0.5%;
+    }
+    .menu2_page1 p {
+        margin: 0.5%;
+    }
+    .align_euro1{padding-left: 0%;font-weight: bold;}
+    .align_euro2{padding-left: 0%;font-weight: bold;}
+    .align_euro3{padding-left: 0%;font-weight: bold;}
+    .align_euro4{padding-left: 0.5%;font-weight: bold;}
+    .align_euro5{padding-left: 0.5%;font-weight: bold;}
+    .align_euro6{padding-left: 0%;font-weight: bold;}
+    .align_euro7{padding-left: 0%;font-weight: bold;}
+    
+    .note2_page1{
+        margin-top: 2%;
+        text-align: center;
+        font-family: Devonshire;
+        font-size: 100%;
+    }
+    
+    .div_foot--1{
+      font-family: 'Montserrat', Impact, Arial, sans-serif;
+      font-weight: bold;
+      background-color: #158fae;
+      padding-right: 3%;
+      padding-left: 3%;
+      font-size: 96%;
+      color: yellow;
+      display: flex;
+      justify-content: space-between;
+      position: fixed; bottom: 0px; left: 0; right: 0;
+    }
+
+ }
+
+/*Les différentes polices utilisées*/
+@font-face{
+    font-family: Courgette;
+    src: local("Courgette")
+}
+@font-face{ 
+    font-family: Devonshire;
+    src:local("Devonshire");
+}
+@font-face {
+    font-family: Dancing Script;
+    src: local("Dancing Script");
+  }
+  @font-face{
+    font-family: Segoe Print;
+    src: local("Segoe Print");
 }
 @font-face{ 
     font-family: "Montserrat";

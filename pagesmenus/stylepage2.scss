@@ -1,32 +1,41 @@
 body{
+    margin:0;
+    padding:0;
     position: relative;
 }
+p{margin:0; padding:0;}
+
 header{
     background-color: rgb(21, 143, 174);
     text-align: center;
     margin-top: 0%;
     margin-bottom: 0%;
 }
-@font-face{
-    font-family: Croissant One;
-    src: local("Croissant One");
+header p{
+    font-family: 'Montserrat', Impact, Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size:450%;
+    font-weight: bold;
+    color: yellow;
 }
 .note_page2{
     font-family: Croissant One; 
-    margin-top: 6%;
+    margin-top: 2%;
     text-align: center;
     font-size: 150%;
     font-weight: bold;
 }
 .conteneur_page2{
     width:60%;
-    height: 580px;
+    height: auto;
     background-color: #FEF9E7;
     margin-left: 20%;
     margin-right: 20%;
-    overflow: scroll;
     text-align: left;
-   /* margin-bottom: 30%;*/
+    margin-bottom: 4%;
+    margin-top: 0%;
     padding-bottom: 2%;
     flex-wrap: wrap;
     
@@ -84,7 +93,6 @@ header{
 .conteneur_menu3--page2{
     color:#510AD5;
 }
-.note_page2{margin-top: 6%;}
 .prelude{
     display: flex; 
     font-size: 150%; 
@@ -131,40 +139,40 @@ header{
     width: 100%;
 }
 .menu1_page2{
+    width: 85%;
     text-align: left;
     display: flex;
     flex-direction: row;
-    padding-left: 16%;
+    justify-content: space-between;
+    padding-left: 8%;
     margin-top:  0px;
     margin-bottom: 0px;
     padding-top: 0px;
     padding-bottom: 0px; 
+}
+.menu2_page2 {
+    width: 85%;
+    text-align: left;
+    padding-left: 8%;
+    font-size: 120%;
 }
 .menu1_page2 p {
     font-size: 120%;
     margin:1%;
     text-align: left;
 }
-.menu2_page2{
-    text-align: left;
-    padding-left: 16%;
+.menu2_page2 p {
     font-size: 120%;
+    margin:1%;
+    text-align: left;
 }
-.aligne1{padding-left: 25.5%;}
-.aligne2{padding-left: 42%;}
-.aligne3{padding-left: 44.5%;}
-.aligne4{padding-left: 9%;}
-.aligne5{padding-left: 15.5%;}
-.aligne6{padding-left: 6%;}
-header p{
-    font-family: 'Montserrat', Impact, Arial, sans-serif;
-    font-weight: bold;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    font-size:450%;
-    font-weight: bold;
-    color: yellow;
-}
+
+.aligne1{padding-left: 0%;}
+.aligne2{padding-left: 0%;}
+.aligne3{padding-left: 0%;}
+.aligne4{padding-left: 0%;}
+.aligne5{padding-left: 0%;}
+.aligne6{padding-left: 0%;}
 
 .div_foot--page2{
   font-family: 'Montserrat', Impact, Arial, sans-serif;
@@ -217,7 +225,426 @@ header p{
     100%{
         transform:translateX(2% *-1);
     } 
+   }
+   }
+/*La media query de largeur maximale 1024px*/
+@media screen and (max-width: 1024px){
+    header p{
+        font-family: 'Montserrat', Impact, Arial, sans-serif;
+        font-weight: bold;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        font-size: 3.5em;
+        font-weight: bold;
+        color: yellow;
+    }
+    .note_page2{
+        font-family: Croissant One; 
+        margin-top: 6%;
+        text-align: center;
+        font-size: 1.2em;
+        flex-wrap: wrap;
+        font-weight: bold;
+    }
+    .conteneur_page2{
+        margin-top: 2%;
+        width:80%;
+        height: auto;
+        background-color: #FEF9E7;
+        margin-left: 10%;
+        margin-right: 10%;
+        overflow: scroll;
+        text-align: left;
+        margin-bottom: 6%;
+        padding-bottom: 2%;
+        flex-wrap: wrap;
+        
+    }
+    
+    .degrade{
+        font-size: 1.2em;
+        background: -webkit-gradient(linear, left top, right top, from(#E67E22), to(#510AD5));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .flech_gauche1 img {
+        /*width: 75px;*/
+        margin-top: 2%;
+        margin-right: 1px;
+        padding-left: 0%;
+       
+    }
+    .flech_droite1 img {
+       /* width: 75px;*/
+        margin-top: 2%;
+        margin-left: 1px;
+        padding-right: 0%;
+        padding-left: 1%;
+    }
+    .flech_gauche2 img {
+        /*width: 75px;*/
+        margin-top: 2%;
+        margin-right: 0px;
+        padding-left: 1%;
+       
+    }
+    .flech_droite2 img {
+       /* width: 75px;*/
+        margin-top: 2%;
+        margin-left: 0px;
+        padding-right: 0%;
+        padding-left: 1%;
+    }
+    .flech_gauche3 img {
+       /* width: 75px;*/
+        margin-top: 2%;
+        margin-right: 2px;
+        padding-left: 1%;
+       
+    }
+    .flech_droite3 img {
+       /* width: 75px;*/
+        margin-left: 2px;
+        margin-top: 2%;
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+    .prelude{
+        display: flex; 
+        font-size: 1em; 
+        font-weight: bold;
+        margin-top: 7%;
+        text-align: center;
+        justify-content: center;
+        }
+    .menu1_page2{
+        width: 90%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 8%;
+        margin-top:  0px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px; 
+    }
+    .menu2_page2 {
+        width: 90%;
+        text-align: center;
+        padding-left: 8%;
+    }
+    .menu1_page2 p {
+        font-size: 1em;
+        margin-top: 1%;
+    }
+    .menu2_page2 p {
+        font-size: 1em;
+        margin: 2%;
+    }
+    .aligne1{padding-left: 0%;}
+    .aligne2{padding-left: 0%;}
+    .aligne3{padding-left: 0%;}
+    .aligne4{padding-left: 0%;}
+    .aligne5{padding-left: 0%;}
+    .aligne6{padding-left: 0%;}
+    
+    .div_foot--page2{
+      font-family: 'Montserrat', Impact, Arial, sans-serif;
+      font-weight: bold;
+      background-color: #158fae;
+      padding-right: 3%;
+      padding-left: 3%;
+      font-size: 2em;
+      color: yellow;
+      display: flex;
+      justify-content: space-between;
+      position: fixed; bottom: 0px; left: 0; right: 0;
+      
+    }
 }
+/*La media query de largeur maximale 760px*/
+@media screen and (max-width: 760px){
+   
+    header p{
+        font-family: 'Montserrat', Impact, Arial, sans-serif;
+        font-weight: bold;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        font-size:2em;
+        font-weight: bold;
+        color: yellow;
+    }
+    .note_page2{
+        font-family: Croissant One; 
+        margin-top: 4%;
+        text-align: center;
+        font-size: 1.2em;
+        flex-wrap: wrap;
+        font-weight: bold;
+    }
+    .conteneur_page2{
+        margin-top: 1%;
+        width:100%;
+        height: auto;
+        background-color: #FEF9E7;
+        margin-left: 0%;
+        margin-right: 0%;
+        /*overflow: scroll;*/
+        text-align: center;
+        margin-bottom: 6%;
+        padding-bottom: 2%;
+        flex-wrap: wrap;
+        
+    }
+    
+    .degrade{
+        font-size: 1.2em;
+        background: -webkit-gradient(linear, left top, right top, from(#E67E22), to(#510AD5));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .flech_gauche1 img {
+        width: 120px;
+        margin-top: 2%;
+        margin-right: 1px;
+        padding-left: 0%;
+       
+    }
+    .flech_droite1 img {
+        width: 120px;
+        margin-top: 2%;
+        margin-left: 1px;
+        padding-right: 0%;
+        padding-left: 1%;
+    }
+    .flech_gauche2 img {
+        width: 120px;
+        margin-top: 2%;
+        margin-right: 0px;
+        padding-left: 1%;
+       
+    }
+    .flech_droite2 img {
+        width: 120px;
+        margin-top: 2%;
+        margin-left: 0px;
+        padding-right: 0%;
+        padding-left: 1%;
+    }
+    .flech_gauche3 img {
+        width: 120px;
+        margin-top: 2%;
+        margin-right: 2px;
+        padding-left: 1%;
+       
+    }
+    .flech_droite3 img {
+        width: 120px;
+        margin-left: 2px;
+        margin-top: 2%;
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+    
+    .prelude{
+        display: flex; 
+        font-size: 1em; 
+        font-weight: bold;
+        margin-top: 7%;
+        text-align: center;
+        justify-content: center;
+        }
+    .menu1_page2{
+        width: 95%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0%;
+        margin-top:  0px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px; 
+    }
+    .menu2_page2 {
+        width: 95%;
+        text-align: center;
+        padding-left: 0%;
+    }
+    .menu1_page2 p {
+        text-align: center;
+        font-size: 1em;
+        margin-top: 1%;
+    }
+    .menu2_page2 p {
+        text-align: center;
+        font-size: 1em;
+        margin: 2%;
+    }
+    .aligne1{padding-left: 0%;}
+    .aligne2{padding-left: 0%;}
+    .aligne3{padding-left: 0%;}
+    .aligne4{padding-left: 0%;}
+    .aligne5{padding-left: 0%;}
+    .aligne6{padding-left: 0%;}
+    
+    .div_foot--page2{
+      font-family: 'Montserrat', Impact, Arial, sans-serif;
+      font-weight: bold;
+      background-color: #158fae;
+      padding-right: 3%;
+      padding-left: 3%;
+      font-size: 1em;
+      color: yellow;
+      display: flex;
+      justify-content: space-between;
+      position: fixed; bottom: 0px; left: 0; right: 0;
+      
+    }
+}
+/*La media query de largeur maximale 375px*/
+@media screen and (max-width:375px){
+        
+        header p{
+            font-family: 'Montserrat', Impact, Arial, sans-serif;
+            font-weight: bold;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            font-size:1.8em;
+            font-weight: bold;
+            color: yellow;
+        }
+        .note_page2{
+            font-family: Croissant One; 
+            margin-top: 4%;
+            text-align: center;
+            font-size: 1.2em;
+            flex-wrap: wrap;
+            font-weight: bold;
+        }
+        .conteneur_page2{
+            margin-top: 2%;
+            width:100%;
+            height: auto;
+            background-color: #FEF9E7;
+            margin-left: 0%;
+            margin-right: 0%;
+           /* overflow: scroll;*/
+            margin-bottom: 9%;
+            padding-bottom: 2%;
+            flex-wrap: wrap;
+            
+        }
+        
+        .degrade{
+            font-size: 1.1em;
+            background: -webkit-gradient(linear, left top, right top, from(#E67E22), to(#510AD5));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .flech_gauche1 img {
+            width: 80px;
+            margin-top: 2%;
+            margin-right: 1px;
+            padding-left: 0%;
+           
+        }
+        .flech_droite1 img {
+            width: 80px;
+            margin-top: 2%;
+            margin-left: 1px;
+            padding-right: 0%;
+            padding-left: 1%;
+        }
+        .flech_gauche2 img {
+            width: 80px;
+            margin-top: 2%;
+            margin-right: 10px;
+            padding-left: 1%;
+           
+        }
+        .flech_droite2 img {
+            width: 80px;
+            margin-top: 2%;
+            margin-left: 10px;
+            padding-right: 0%;
+            padding-left: 1%;
+        }
+        .flech_gauche3 img {
+            width: 80px;
+            margin-top: 2%;
+            margin-right: 2px;
+            padding-left: 1%;
+           
+        }
+        .flech_droite3 img {
+            width: 80px;
+            margin-left: 2px;
+            margin-top: 2%;
+            padding-right: 1%;
+            padding-left: 1%;
+        }
+        
+        .prelude{
+            display: flex; 
+            font-size: .98em; 
+            font-weight: bold;
+            margin-top: 7%;
+            text-align: center;
+            justify-content: center;
+            }
+       
+        .menu1_page2{
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            padding-left: 0%;
+            margin-top:  0px;
+            margin-bottom: 0px;
+            padding-top: 0px;
+            padding-bottom: 0px; 
+        }
+        .menu2_page2 {
+            width: 100%;
+            text-align: center;
+            padding-left: 0%;
+        }
+        .menu1_page2 p {
+            text-align: center;
+            font-size: .95em;
+            margin-top: 1%;
+        }
+        .menu2_page2 p {
+            text-align: center;
+            font-size: .95em;
+            margin: 2%;
+        }
+        .aligne1{padding-left: 0%;}
+        .aligne2{padding-left: 0%;}
+        .aligne3{padding-left: 0%;}
+        .aligne4{padding-left: 0%;}
+        .aligne5{padding-left: 0%;}
+        .aligne6{padding-left: 0%;}
+        
+        .div_foot--page2{
+          font-family: 'Montserrat', Impact, Arial, sans-serif;
+          font-weight: bold;
+          background-color: #158fae;
+          padding-right: 3%;
+          padding-left: 3%;
+          font-size: .9em;
+          color: yellow;
+          display: flex;
+          justify-content: space-between;
+          position: fixed; bottom: 0px; left: 0; right: 0;
+          
+        }
+
+}
+@font-face{
+    font-family: Croissant One;
+    src: local("Croissant One");
 }
 @font-face{
     font-family: Croissant One;

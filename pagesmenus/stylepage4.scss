@@ -10,14 +10,16 @@ header{
     margin-top: 0%;
     margin-bottom: 0%;
 }
-@font-face{
-    font-family: Kaushan Script;
-    src: local("Kaushan Script")
+header p{
+    font-family: 'Montserrat', Impact, Arial, sans-serif;
+    font-weight: bold;
+    flex-wrap: wrap;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size:4.8em;
+    color: yellow;
 }
-@font-face{
-    font-family: Segoe Print;
-    src: local("Segoe Print");
-}
+
 .note_page4{ 
     font-family: Kaushan Script;
     src:local(Devonshire-Regular) format('ttf');
@@ -25,56 +27,55 @@ header{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    font-size: 270%;
+    font-size: 2.7em;
     font-weight: bold;
-    margin-top: 6%;
+    margin-top: 2%;
 
 }
 .conteneur_page4{
     width:60%;
-    height: 575px;
-    box-shadow: 3px 3px 3px 3px rgb(161, 165, 165);
+    height: auto;
+    box-shadow: 1px 1px 2px 2px rgb(161, 165, 165);
     background-color: white;
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 0.5%;
-    overflow: scroll;
     padding-bottom: 2%;
-    flex-wrap: wrap;
-    
+    margin-bottom: 4%;
+    flex-wrap: wrap; 
 }
 .flech_gauche1 img {
     margin-top: 2%;
-    margin-right: 110px;
+    margin-right: 95px;
     padding-left: 2%;
 }
 .flech_droite1 img {
     margin-top: 2%;
-    margin-left: 110px;
+    margin-left: 95px;
     padding-right: 2%;
     padding-left: 2%;
 }
 .flech_gauche2 img {
     margin-top: 2%;
-    margin-right: 55px;
+    margin-right: 45px;
     padding-left: 2%;
     padding-right: 2%;
 }
 .flech_droite2 img {
     margin-top: 2%;
-    margin-left: 55px;
+    margin-left: 45px;
     padding-right: 2%;
     padding-left: 2%;
 }
 .flech_gauche3 img {
     margin-top: 2%;
-    margin-right: 45px;
+    margin-right: 35px;
     padding-left: 2%;
     padding-right: 2%;
 }
 .flech_droite3 img {
     margin-top: 2%;
-    margin-left: 45px;
+    margin-left: 35px;
     padding-right: 2%;
     padding-left: 2%;
 }
@@ -83,7 +84,7 @@ header{
     justify-content: center;
     font-family: Segoe Print;
     text-align: center;
-    font-size: 150%; 
+    font-size: 1.5em; 
     font-weight: bold; 
     margin-top: 6%;
     margin-bottom: 2%;
@@ -128,20 +129,24 @@ header{
     width: 100%;
 }
 .menu1_page4{
+    width: 92%;
     font-family: Segoe Print;
-    font-size: 120%;
+    font-size: 1.1em;
     text-align: left;
     display: flex;
     flex-direction: row;
-    padding-left: 12%;
+    justify-content: space-between;
+    padding-left: 5%;
 }
 .menu2_page4{
+    width: 92%;
     font-family: Segoe Print;
-    font-size: 120%;
+    font-size: 1.1em;
     text-align: left;
     display: flex;
     flex-direction: row;
-    padding-left: 12%;
+    justify-content: space-between;
+    padding-left: 5%;
 }
 .menu1_page4 p {
     margin:1%;
@@ -149,25 +154,15 @@ header{
 .menu2_page4 p {
   margin: 1%;
 }
-.aligne_euro1{padding-left: 34%; font-weight: bold;}
-.aligne_euro2{padding-left: 24%; font-weight: bold;}
-.aligne_euro3{padding-left: 13.5%;font-weight: bold;}
-.aligne_euro4{padding-left: 6%; font-weight: bold;}
-.aligne_euro5{padding-left: 2.5%;font-weight: bold;}
-.aligne_euro6{padding-left: 50%; font-weight: bold;}
-.aligne_euro7{padding-left: 62.5%;font-weight: bold;}
-.aligne_euro8{padding-left: 0.8%; font-weight: bold;}
-.aligne_euro9{padding-left: 13%; font-weight: bold;}
-
-header p{
-    font-family: 'Montserrat', Impact, Arial, sans-serif;
-    font-weight: bold;
-    flex-wrap: wrap;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    font-size:450%;
-    color: yellow;
-}
+.aligne_euro1{padding-left: 0%; font-weight: bold;}
+.aligne_euro2{padding-left: 0%; font-weight: bold;}
+.aligne_euro3{padding-left: 0%;font-weight: bold;}
+.aligne_euro4{padding-left: 0%; font-weight: bold;}
+.aligne_euro5{padding-left: 0%;font-weight: bold;}
+.aligne_euro6{padding-left: 0%; font-weight: bold;}
+.aligne_euro7{padding-left: 0%;font-weight: bold;}
+.aligne_euro8{padding-left: 0%; font-weight: bold;}
+.aligne_euro9{padding-left: 0%; font-weight: bold;}
 
 .div_foot--page4{
   font-family: 'Montserrat', Impact, Arial, sans-serif;
@@ -175,7 +170,7 @@ header p{
   background-color: #158fae;
   padding-right: 3%;
   padding-left: 3%;
-  font-size: 250%;
+  font-size: 2.5em;
   color: yellow;
   display: flex;
   flex-wrap: wrap;
@@ -221,6 +216,325 @@ header p{
         transform:translateX(2% *-1);
     } 
 }
+}
+/*La media query de largeur maximale 1024px*/
+@media screen and (max-width: 1299px){
+    .conteneur_page4{
+        width: 80%;
+        height: auto;
+        box-shadow: 1px 1px 2px 2px rgb(161, 165, 165);
+        background-color: white;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 0.5%;
+        padding-bottom: 2%;
+        margin-bottom: 6%;
+        flex-wrap: wrap; 
+    } 
+}
+/*La media query de largeur maximale 1024px*/
+@media screen and (max-width: 1024px){
+    header p{font-size: 3.8em;}
+    .note_page4{font: 2.5em;}
+    .conteneur_page4{
+        width: 88%;
+        height: auto;
+        box-shadow: 1px 1px 2px 2px rgb(161, 165, 165);
+        background-color: white;
+        margin-left: 6%;
+        margin-right: 6%;
+        margin-top: 0.5%;
+        padding-bottom: 2%;
+        margin-bottom: 4%;
+        flex-wrap: wrap; 
+    }
+    .flech_gauche1 img {
+        width: 200px;
+        margin-top: 2%;
+        margin-right: 70px;
+        padding-left: 2%;
+    }
+    .flech_droite1 img {
+        width: 200px;
+        margin-top: 2%;
+        margin-left: 70px;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    .flech_gauche2 img {
+        width: 200px;
+        margin-top: 2%;
+        margin-right: 8px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .flech_droite2 img {
+        width: 200px;
+        margin-top: 2%;
+        margin-left: 8px;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    .flech_gauche3 img {
+        width: 200px;
+        margin-top: 2%;
+        margin-right: 0px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .flech_droite3 img {
+        width: 200px;
+        margin-top: 2%;
+        margin-left: 0px;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    .menu1_page4{
+        width: 100%;
+        font-family: Segoe Print;
+        font-size: 1em;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 0%;
+    }
+    .menu2_page4{
+        width: 100%;
+        font-family: Segoe Print;
+        font-size: 1em;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 0%;
+    }
+    .div_foot--page4{font-size: 1.2em;}
+}
+/*La media query de largeur maximale 760px*/
+@media screen and (max-width: 760px){
+    header p{ font-size: 2.2em;} 
+    .note_page4{font-size: 1.5em;}
+    .conteneur_page4{
+      width: 100%;
+      height: auto;
+      box-shadow: 1px 1px 2px 2px rgb(161, 165, 165);
+      background-color: white;
+      margin-left: 0%;
+      margin-right: 0%;
+      margin-top: 0.5%;
+      padding-bottom: 2%;
+      margin-bottom: 7%;
+      flex-wrap: wrap; 
+  }
+  .flech_gauche1 img {
+      width: 90px;
+      margin-top: 2%;
+      margin-right: 45px;
+      padding-left: 2%;
+  }
+  .flech_droite1 img {
+      width: 90px;
+      margin-top: 2%;
+      margin-left: 45px;
+      padding-right: 2%;
+      padding-left: 2%;
+  }
+  .flech_gauche2 img {
+      width: 90px;
+      margin-top: 2%;
+      margin-right: 5px;
+      padding-left: 2%;
+      padding-right: 2%;
+  }
+  .flech_droite2 img {
+      width: 90px;
+      margin-top: 2%;
+      margin-left: 5px;
+      padding-right: 2%;
+      padding-left: 2%;
+  }
+  .flech_gauche3 img {
+      width: 90px;
+      margin-top: 2%;
+      margin-right: 0px;
+      padding-left: 2%;
+      padding-right: 2%;
+  }
+  .flech_droite3 img {
+      width: 90px;
+      margin-top: 2%;
+      margin-left: 0px;
+      padding-right: 2%;
+      padding-left: 2%;
+  }
+  .prelude{
+      display: flex;
+      justify-content: center;
+      font-family: Segoe Print;
+      text-align: center;
+      font-size: 1.1em; 
+      font-weight: bold; 
+      margin-top: 6%;
+      margin-bottom: 2%;
+  }
+  .menu1_page4{
+      width: 100%;
+      font-family: Segoe Print;
+      font-size: .98em;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      padding-left: 0%;
+  }
+  .menu2_page4{
+      width: 100%;
+      font-family: Segoe Print;
+      font-size: .98em;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      padding-left: 0%;
+  }
+  .menu1_page4 p {
+      text-align: center;
+      margin:1%;
+  }
+  .menu2_page4 p {
+      text-align: center;
+      margin: 1%;
+  }
+  .div_foot--page4{
+      width: 100%;
+      font-family: 'Montserrat', Impact, Arial, sans-serif;
+      font-weight: bold;
+      background-color: #158fae;
+      padding-right: 0%;
+      padding-left: 0%;
+      font-size: 1.1em;
+      color: yellow;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      position: fixed; bottom: 0px; left: 0; right: 0; 
+    }
+  }
+/*La media query de largeur maximale 375px*/
+@media screen and (max-width:375px){
+  header p{ font-size: 2.2em;} 
+  .note_page4{font-size: 1.5em;}
+  .conteneur_page4{
+    width: 100%;
+    height: auto;
+    box-shadow: 1px 1px 2px 2px rgb(161, 165, 165);
+    background-color: white;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0.5%;
+    padding-bottom: 2%;
+    margin-bottom: 8.5%;
+    flex-wrap: wrap; 
+}
+.flech_gauche1 img {
+    width: 80px;
+    margin-top: 2%;
+    margin-right: 30px;
+    padding-left: 2%;
+}
+.flech_droite1 img {
+    width: 80px;
+    margin-top: 2%;
+    margin-left: 30px;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+.flech_gauche2 img {
+    width: 80px;
+    margin-top: 2%;
+    margin-right: 0px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.flech_droite2 img {
+    width: 80px;
+    margin-top: 2%;
+    margin-left: 0px;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+.flech_gauche3 img {
+    width: 80px;
+    margin-top: 2%;
+    margin-right: 0px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.flech_droite3 img {
+    width: 80px;
+    margin-top: 2%;
+    margin-left: 0px;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+.prelude{
+    display: flex;
+    justify-content: center;
+    font-family: Segoe Print;
+    text-align: center;
+    font-size: 1.1em; 
+    font-weight: bold; 
+    margin-top: 6%;
+    margin-bottom: 2%;
+}
+.menu1_page4{
+    width: 100%;
+    font-family: Segoe Print;
+    font-size: .95em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0%;
+}
+.menu2_page4{
+    width: 100%;
+    font-family: Segoe Print;
+    font-size: .95em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0%;
+}
+.menu1_page4 p {
+    text-align: center;
+    margin:1%;
+}
+.menu2_page4 p {
+    text-align: center;
+    margin: 1%;
+}
+.div_foot--page4{
+    width: 100%;
+    font-family: 'Montserrat', Impact, Arial, sans-serif;
+    font-weight: bold;
+    background-color: #158fae;
+    padding-right: 0%;
+    padding-left: 0%;
+    font-size: .98em;
+    color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: fixed; bottom: 0px; left: 0; right: 0; 
+  }
+}
+/*Les différentes polices utilisées*/
+@font-face{
+    font-family: Kaushan Script;
+    src: local("Kaushan Script")
+}
+@font-face{
+    font-family: Segoe Print;
+    src: local("Segoe Print");
 }
 @font-face{ 
     font-family: "Montserrat";

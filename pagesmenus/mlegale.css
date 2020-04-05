@@ -1,41 +1,46 @@
+@charset "UTF-8";
 body {
+  margin: 0px;
+  padding: 0px;
   position: relative;
 }
 
 header {
   background-color: #158fae;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 0%;
+  margin-right: 0%;
   text-align: center;
   margin-top: 0%;
   margin-bottom: 0%;
 }
 
-.note_page5 {
-  text-align: center;
-  font-size: 270%;
+header p {
+  font-family: "Montserrat", Impact, Arial, sans-serif;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  font-size: 4.5em;
   font-weight: bold;
-  margin-top: 6%;
+  color: yellow;
 }
 
 .conteneur_page5 {
   font-family: "Montserrat", Impact, Arial, sans-serif;
   width: 60%;
-  height: 550px;
+  height: auto;
   background-color: #5D6D7E;
   color: white;
   margin-left: 20%;
   margin-right: 20%;
-  overflow: scroll;
   text-align: center;
-  margin-bottom: 30%;
-  padding-bottom: 2%;
+  margin-bottom: 5%;
+  margin-top: 1%;
+  padding-bottom: 0%;
   padding-top: 2%;
   flex-wrap: wrap;
 }
 
 .prelude {
-  font-size: 150%;
+  font-size: 1.5em;
   font-weight: bold;
   margin-top: 5%;
 }
@@ -50,8 +55,8 @@ header {
 
 .menu2_privee {
   text-align: left;
-  margin-left: 5%;
-  font-size: 100%;
+  margin-left: 0%;
+  font-size: 1em;
 }
 
 .conteneur_menu--page5 {
@@ -59,36 +64,22 @@ header {
   padding: 2%;
 }
 
-header p {
-  font-family: "Montserrat", Impact, Arial, sans-serif;
-  margin-top: 0%;
-  margin-bottom: 0%;
-  font-size: 450%;
-  font-weight: bold;
-  color: yellow;
-}
-
-.note2_page5 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 .div_foot--page5 {
+  width: 100%;
   font-family: "Montserrat", Impact, Arial, sans-serif;
   font-weight: bold;
   background-color: #158fae;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-right: 3%;
-  padding-left: 3%;
-  font-size: 250%;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding-right: 0%;
+  padding-left: 0%;
+  font-size: 2.5em;
   color: yellow;
   flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
-  position: absolute;
-  bottom: -45px;
+  position: fixed;
+  bottom: 0px;
   left: 0;
   right: 0;
 }
@@ -133,6 +124,130 @@ header p {
   }
 }
 
+/*La media query de largeur maximale 1024px*/
+@media screen and (max-width: 1024px) {
+  header p {
+    font-size: 3em;
+  }
+
+  .conteneur_page5 {
+    font-family: "Montserrat", Impact, Arial, sans-serif;
+    width: 100%;
+    height: auto;
+    background-color: #5D6D7E;
+    color: white;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align: center;
+    margin-bottom: 4%;
+    margin-top: 1%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    flex-wrap: wrap;
+    font-size: 1em;
+  }
+
+  .conteneur_menu--page5 {
+    margin-left: 0%;
+    padding: 2%;
+  }
+
+  .prelude {
+    font-size: 1.2em;
+  }
+
+  .menu2_privee {
+    font-size: 1em;
+  }
+
+  .div_foot--page5 {
+    font-size: 1.4em;
+    width: 100%;
+  }
+}
+/*La media query de largeur maximale 760px*/
+@media screen and (max-width: 760px) {
+  header p {
+    font-size: 2.8em;
+  }
+
+  .conteneur_page5 {
+    font-family: "Montserrat", Impact, Arial, sans-serif;
+    width: 100%;
+    height: auto;
+    background-color: #5D6D7E;
+    color: white;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align: center;
+    margin-bottom: 7%;
+    margin-top: 1%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    flex-wrap: wrap;
+    font-size: 0.95em;
+  }
+
+  .conteneur_menu--page5 {
+    margin-left: 0%;
+    padding: 2%;
+  }
+
+  .prelude {
+    font-size: 1em;
+  }
+
+  .menu2_privee {
+    font-size: 0.95em;
+  }
+
+  .div_foot--page5 {
+    font-size: 1.2em;
+    width: 100%;
+  }
+}
+/*La media query de largeur maximale 375px*/
+@media screen and (max-width: 375px) {
+  header p {
+    font-size: 2.5em;
+  }
+
+  .conteneur_page5 {
+    font-family: "Montserrat", Impact, Arial, sans-serif;
+    width: 100%;
+    height: auto;
+    background-color: #5D6D7E;
+    color: white;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align: center;
+    margin-bottom: 8%;
+    margin-top: 1%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    flex-wrap: wrap;
+    font-size: 0.9em;
+  }
+
+  .conteneur_menu--page5 {
+    margin-left: 0%;
+    padding: 2%;
+  }
+
+  .prelude {
+    font-size: 1em;
+  }
+
+  .menu2_privee {
+    font-size: 0.9em;
+  }
+
+  .div_foot--page5 {
+    font-size: 1.2em;
+    width: 100%;
+  }
+}
+/*Les différentes polices utilisées*/
 @font-face {
   font-family: "Roboto";
   src: url(Roboto.eot) format("eot");
