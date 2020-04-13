@@ -1,4 +1,28 @@
 @charset "UTF-8";
+/*Les différentes polices utilisées*/
+@font-face {
+  font-family: SegoePrint;
+  src: url(polices/segoepr_0.ttf);
+}
+@font-face {
+  font-family: KaushanScript;
+  src: url(polices/KaushanScript-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(Roboto.eot) format("eot");
+  src: url(Roboto.svg) format("svg");
+  src: url(Roboto.woff) format("woff");
+  src: url(Roboto.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(Montserrat.eot) format("eot");
+  src: url(Montserrat.svg) format("svg");
+  src: url(Montserrat.woff) format("woff");
+  src: url(Montserrat.ttf) format("ttf");
+}
+/*Le code pricipal*/
 body {
   margin: 0px;
   padding: 0px;
@@ -7,24 +31,24 @@ body {
 
 header {
   flex-wrap: wrap;
-  background-color: #158fae;
+  background-color: #569C87;
   text-align: center;
   margin-top: 0%;
   margin-bottom: 0%;
 }
 
-header p {
+header h1 {
   font-family: "Montserrat", Impact, Arial, sans-serif;
   font-weight: bold;
   flex-wrap: wrap;
   margin-top: 0%;
   margin-bottom: 0%;
   font-size: 4.8em;
-  color: yellow;
+  color: #FCCA46;
 }
 
 .note_page4 {
-  font-family: Kaushan Script;
+  font-family: KaushanScript;
   src: local(Devonshire-Regular) format("ttf");
   background: -webkit-gradient(linear, left top, right top, from(#04B314), to(#eeaf1d));
   -webkit-background-clip: text;
@@ -92,7 +116,7 @@ header p {
 .prelude {
   display: flex;
   justify-content: center;
-  font-family: Segoe Print;
+  font-family: SegoePrint;
   text-align: center;
   font-size: 1.5em;
   font-weight: bold;
@@ -142,7 +166,7 @@ header p {
 
 .menu1_page4 {
   width: 92%;
-  font-family: Segoe Print;
+  font-family: SegoePrint;
   font-size: 1.1em;
   text-align: left;
   display: flex;
@@ -153,7 +177,7 @@ header p {
 
 .menu2_page4 {
   width: 92%;
-  font-family: Segoe Print;
+  font-family: SegoePrint;
   font-size: 1.1em;
   text-align: left;
   display: flex;
@@ -218,11 +242,11 @@ header p {
 .div_foot--page4 {
   font-family: "Montserrat", Impact, Arial, sans-serif;
   font-weight: bold;
-  background-color: #158fae;
+  background-color: #569C87;
   padding-right: 3%;
   padding-left: 3%;
   font-size: 2.5em;
-  color: yellow;
+  color: #FCCA46;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -234,12 +258,12 @@ header p {
 
 .mlegales a {
   text-decoration: none;
-  color: yellow;
+  color: #FCCA46;
 }
 
 .contact a {
   text-decoration: none;
-  color: yellow;
+  color: #FCCA46;
 }
 
 .contact:hover {
@@ -287,9 +311,32 @@ header p {
     flex-wrap: wrap;
   }
 }
+@media screen and (max-width: 1030px) {
+  header h1 {
+    font-size: 3.8em;
+  }
+
+  .note_page4 {
+    font: 2.5em;
+  }
+
+  .conteneur_page4 {
+    width: 88%;
+    height: 1000px;
+    box-shadow: 1px 1px 2px 2px #a1a5a5;
+    background-color: white;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 3%;
+    padding-top: 9%;
+    padding-bottom: 3%;
+    margin-bottom: 1%;
+    flex-wrap: wrap;
+  }
+}
 /*La media query de largeur maximale 1024px*/
-@media screen and (max-width: 1024px) {
-  header p {
+@media screen and (max-width: 900px) {
+  header h1 {
     font-size: 3.8em;
   }
 
@@ -304,7 +351,8 @@ header p {
     background-color: white;
     margin-left: 6%;
     margin-right: 6%;
-    margin-top: 0.5%;
+    margin-top: 3%;
+    padding-top: 8%;
     padding-bottom: 2%;
     margin-bottom: 4%;
     flex-wrap: wrap;
@@ -359,7 +407,7 @@ header p {
 
   .menu1_page4 {
     width: 100%;
-    font-family: Segoe Print;
+    font-family: SegoePrint;
     font-size: 1em;
     text-align: left;
     display: flex;
@@ -370,7 +418,7 @@ header p {
 
   .menu2_page4 {
     width: 100%;
-    font-family: Segoe Print;
+    font-family: SegoePrint;
     font-size: 1em;
     text-align: left;
     display: flex;
@@ -381,11 +429,15 @@ header p {
 
   .div_foot--page4 {
     font-size: 1.2em;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right: 0;
   }
 }
 /*La media query de largeur maximale 760px*/
 @media screen and (max-width: 760px) {
-  header p {
+  header h1 {
     font-size: 2.2em;
   }
 
@@ -456,7 +508,7 @@ header p {
   .prelude {
     display: flex;
     justify-content: center;
-    font-family: Segoe Print;
+    font-family: SegoePrint;
     text-align: center;
     font-size: 1.1em;
     font-weight: bold;
@@ -466,7 +518,7 @@ header p {
 
   .menu1_page4 {
     width: 100%;
-    font-family: Segoe Print;
+    font-family: SegoePrint;
     font-size: 0.98em;
     text-align: left;
     display: flex;
@@ -476,7 +528,7 @@ header p {
 
   .menu2_page4 {
     width: 100%;
-    font-family: Segoe Print;
+    font-family: SegoePrint;
     font-size: 0.98em;
     text-align: left;
     display: flex;
@@ -498,7 +550,7 @@ header p {
     width: 100%;
     font-family: "Montserrat", Impact, Arial, sans-serif;
     font-weight: bold;
-    background-color: #158fae;
+    background-color: #569C87;
     padding-right: 0%;
     padding-left: 0%;
     font-size: 1.1em;
@@ -514,7 +566,7 @@ header p {
 }
 /*La media query de largeur maximale 375px*/
 @media screen and (max-width: 375px) {
-  header p {
+  header h1 {
     font-size: 2.2em;
   }
 
@@ -585,7 +637,7 @@ header p {
   .prelude {
     display: flex;
     justify-content: center;
-    font-family: Segoe Print;
+    font-family: SegoePrint;
     text-align: center;
     font-size: 1.1em;
     font-weight: bold;
@@ -595,7 +647,7 @@ header p {
 
   .menu1_page4 {
     width: 100%;
-    font-family: Segoe Print;
+    font-family: SegoePrint;
     font-size: 0.95em;
     text-align: left;
     display: flex;
@@ -605,7 +657,7 @@ header p {
 
   .menu2_page4 {
     width: 100%;
-    font-family: Segoe Print;
+    font-family: SegoePrint;
     font-size: 0.95em;
     text-align: left;
     display: flex;
@@ -627,7 +679,7 @@ header p {
     width: 100%;
     font-family: "Montserrat", Impact, Arial, sans-serif;
     font-weight: bold;
-    background-color: #158fae;
+    background-color: #569C87;
     padding-right: 0%;
     padding-left: 0%;
     font-size: 0.98em;
@@ -642,24 +694,24 @@ header p {
   }
 }
 /*Les différentes polices utilisées*/
-@font-face {
-  font-family: Kaushan Script;
-  src: local("Kaushan Script");
+/*@font-face{
+    font-family: Kaushan Script;
+    src: local("Kaushan Script")
 }
-@font-face {
-  font-family: Segoe Print;
-  src: local("Segoe Print");
+@font-face{
+    font-family: Segoe Print;
+    src: local("Segoe Print");
 }
-@font-face {
-  font-family: "Montserrat";
-  src: url(Montserrat.eot) format("eot");
-  src: url(Montserrat.svg) format("svg");
-  src: url(Montserrat.woff) format("woff");
-  src: url(Montserrat.ttf) format("ttf");
-}
-@font-face {
-  font-family: "Devonshire-Regular";
-  src: local(Devonshire-Regular) format("ttf");
-}
+@font-face{ 
+    font-family: "Montserrat";
+    src:url(Montserrat.eot) format('eot');
+    src:url(Montserrat.svg) format('svg');
+    src:url(Montserrat.woff) format('woff');
+    src:url(Montserrat.ttf) format('ttf');
+    } 
+@font-face{ 
+    font-family: "Devonshire-Regular";
+    src:local(Devonshire-Regular) format('ttf');
+    } */
 
 /*# sourceMappingURL=stylepage4.css.map */

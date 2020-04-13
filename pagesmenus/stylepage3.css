@@ -1,4 +1,28 @@
 @charset "UTF-8";
+/*Les différentes polices utilisées*/
+@font-face {
+  font-family: SegoePrint;
+  src: url(polices/segoepr_0.ttf);
+}
+@font-face {
+  font-family: DancingScript;
+  src: url(polices/DancingScript-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(Roboto.eot) format("eot");
+  src: url(Roboto.svg) format("svg");
+  src: url(Roboto.woff) format("woff");
+  src: url(Roboto.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(Montserrat.eot) format("eot");
+  src: url(Montserrat.svg) format("svg");
+  src: url(Montserrat.woff) format("woff");
+  src: url(Montserrat.ttf) format("ttf");
+}
+/*Le code principal*/
 body {
   margin: 0px;
   padding: 0px;
@@ -6,24 +30,24 @@ body {
 }
 
 header {
-  background-color: #158fae;
+  background-color: #569C87;
   text-align: center;
   margin-top: 0%;
   margin-bottom: 0%;
 }
 
-header p {
+header h1 {
   font-family: "Montserrat", Impact, Arial, sans-serif;
   font-weight: bold;
   margin-top: 0%;
   margin-bottom: 0%;
   font-size: 4.5em;
   font-weight: bold;
-  color: yellow;
+  color: #FCCA46;
 }
 
 .note_page3 {
-  font-family: Dancing Script;
+  font-family: DancingScript;
   background: -webkit-gradient(linear, left top, right top, from(#0540f0), to(#7cbdf1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -34,14 +58,13 @@ header p {
 }
 
 .conteneur_page3 {
-  box-shadow: 1px 1px 2px 2px black;
+  box-shadow: 1px 1px 2px 2px grey;
   width: 60%;
   height: auto;
   background-color: whitesmoke;
   margin-left: 20%;
   margin-right: 20%;
   margin-top: 0.3%;
-  /*overflow: scroll;*/
   text-align: left;
   padding-bottom: 1%;
   margin-bottom: 4%;
@@ -92,7 +115,7 @@ header p {
 .prelude {
   display: flex;
   justify-content: center;
-  font-family: Segoe Print;
+  font-family: SegoePrint;
   font-size: 1.5em;
   font-weight: bold;
   margin-top: 5%;
@@ -141,7 +164,7 @@ header p {
 }
 
 .menu1_page3 {
-  font-family: Segoe Print;
+  font-family: SegoePrint;
   font-size: 1.2em;
   text-align: left;
   display: flex;
@@ -151,7 +174,7 @@ header p {
 }
 
 .menu2_page3 {
-  font-family: Segoe Print;
+  font-family: SegoePrint;
   font-size: 1.2em;
   text-align: left;
   display: flex;
@@ -216,11 +239,11 @@ header p {
 .div_foot--page3 {
   font-family: "Montserrat", Impact, Arial, sans-serif;
   font-weight: bold;
-  background-color: #158fae;
+  background-color: #569C87;
   padding-right: 3%;
   padding-left: 3%;
   font-size: 2.5em;
-  color: yellow;
+  color: #FCCA46;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -231,12 +254,12 @@ header p {
 
 .mlegales a {
   text-decoration: none;
-  color: yellow;
+  color: #FCCA46;
 }
 
 .contact a {
   text-decoration: none;
-  color: yellow;
+  color: #FCCA46;
 }
 
 .contact:hover {
@@ -292,7 +315,7 @@ header p {
     position: relative;
   }
 
-  header p {
+  header h1 {
     font-size: 4em;
   }
 
@@ -360,7 +383,7 @@ header p {
   .prelude {
     display: flex;
     justify-content: center;
-    font-family: Segoe Print;
+    font-family: SegoePrint;
     font-size: 1.2em;
     font-weight: bold;
     margin-top: 5%;
@@ -370,7 +393,7 @@ header p {
 
   .menu1_page3 {
     width: 90%;
-    font-family: Segoe Print;
+    font-family: SegoePrint;
     font-size: 1.1em;
     text-align: left;
     display: flex;
@@ -381,7 +404,7 @@ header p {
 
   .menu2_page3 {
     width: 90%;
-    font-family: Segoe Print;
+    font-family: SegoePrint;
     font-size: 1.1em;
     text-align: left;
     display: flex;
@@ -401,11 +424,11 @@ header p {
   .div_foot--page3 {
     font-family: "Montserrat", Impact, Arial, sans-serif;
     font-weight: bold;
-    background-color: #158fae;
+    background-color: #569C87;
     padding-right: 3%;
     padding-left: 3%;
     font-size: 2.2em;
-    color: yellow;
+    color: #FCCA46;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -416,7 +439,7 @@ header p {
 }
 /*La media query de largeur maximale 760px*/
 @media screen and (max-width: 760px) {
-  header p {
+  header h1 {
     font-size: 2.5em;
   }
 
@@ -482,7 +505,7 @@ header p {
   .prelude {
     display: flex;
     justify-content: center;
-    font-family: Segoe Print;
+    font-family: SegoePrint;
     font-size: 1.1em;
     font-weight: bold;
     margin-top: 5%;
@@ -492,7 +515,7 @@ header p {
 
   .menu1_page3 {
     width: 98%;
-    font-family: Segoe Print;
+    font-family: SegoePrint;
     font-size: 0.98em;
     text-align: center;
     display: flex;
@@ -502,7 +525,7 @@ header p {
 
   .menu2_page3 {
     width: 98%;
-    font-family: Segoe Print;
+    font-family: SegoePrint;
     font-size: 0.98em;
     text-align: center;
     display: flex;
@@ -524,11 +547,11 @@ header p {
     width: 100%;
     font-family: "Montserrat", Impact, Arial, sans-serif;
     font-weight: bold;
-    background-color: #158fae;
+    background-color: #569C87;
     padding-right: 0%;
     padding-left: 0%;
     font-size: 1.2em;
-    color: yellow;
+    color: #FCCA46;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -539,7 +562,7 @@ header p {
 }
 /*La media query de largeur maximale 375px*/
 @media screen and (max-width: 375px) {
-  header p {
+  header h1 {
     font-size: 2.2em;
     width: 100%;
   }
@@ -605,7 +628,7 @@ header p {
   .prelude {
     display: flex;
     justify-content: center;
-    font-family: Segoe Print;
+    font-family: SegoePrint;
     font-size: 1em;
     font-weight: bold;
     margin-top: 5%;
@@ -615,7 +638,7 @@ header p {
 
   .menu1_page3 {
     width: 100%;
-    font-family: Segoe Print;
+    font-family: SegoePrint;
     font-size: 0.95em;
     text-align: center;
     display: flex;
@@ -625,7 +648,7 @@ header p {
 
   .menu2_page3 {
     width: 100%;
-    font-family: Segoe Print;
+    font-family: SegoePrint;
     font-size: 0.95em;
     text-align: center;
     display: flex;
@@ -647,11 +670,11 @@ header p {
     width: 100%;
     font-family: "Montserrat", Impact, Arial, sans-serif;
     font-weight: bold;
-    background-color: #158fae;
+    background-color: #569C87;
     padding-right: 0%;
     padding-left: 0%;
     font-size: 1em;
-    color: yellow;
+    color: #FCCA46;
     display: flex;
     justify-content: space-around;
     position: fixed;
@@ -661,31 +684,32 @@ header p {
   }
 }
 /*Les différentes polices utilisées*/
-@font-face {
-  font-family: Courgette;
-  src: local("Courgette");
+/*
+@font-face{
+    font-family: Courgette;
+    src: local("Courgette")
 }
 @font-face {
-  font-family: Dancing Script;
-  src: local("Dancing Script");
+    font-family: Dancing Script;
+    src: local("Dancing Script");
+  }
+  @font-face{
+    font-family: Segoe Print;
+    src: local("Segoe Print");
 }
-@font-face {
-  font-family: Segoe Print;
-  src: local("Segoe Print");
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url(Montserrat.eot) format("eot");
-  src: url(Montserrat.svg) format("svg");
-  src: url(Montserrat.woff) format("woff");
-  src: url(Montserrat.ttf) format("ttf");
-}
-@font-face {
-  font-family: "Felipa";
-  src: url(Felipa.eot) format("eot");
-  src: url(Felipa.svg) format("svg");
-  src: url(Felipa.woff) format("woff");
-  src: url(Felipa.ttf) format("ttf");
-}
+@font-face{ 
+    font-family: "Montserrat";
+    src:url(Montserrat.eot) format('eot');
+    src:url(Montserrat.svg) format('svg');
+    src:url(Montserrat.woff) format('woff');
+    src:url(Montserrat.ttf) format('ttf');
+    } 
+@font-face{ 
+    font-family: "Felipa";
+    src:url(Felipa.eot) format('eot');
+    src:url(Felipa.svg) format('svg');
+    src:url(Felipa.woff) format('woff');
+    src:url(Felipa.ttf) format('ttf');
+    } */
 
 /*# sourceMappingURL=stylepage3.css.map */

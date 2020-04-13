@@ -1,3 +1,26 @@
+
+/*Les différentes polices utilisées*/
+@font-face{
+    font-family: CroissantOne;
+    src: url(polices/CroissantOne-Regular.ttf);
+}
+
+@font-face{ 
+    font-family: "Roboto";
+    src:url(Roboto.eot) format('eot');
+    src:url(Roboto.svg) format('svg');
+    src:url(Roboto.woff) format('woff');
+    src:url(Roboto.ttf) format('ttf');
+} 
+@font-face{ 
+font-family: "Montserrat";
+src:url(Montserrat.eot) format('eot');
+src:url(Montserrat.svg) format('svg');
+src:url(Montserrat.woff) format('woff');
+src:url(Montserrat.ttf) format('ttf');
+} 
+
+/*Le code principal*/
 body{
     margin:0;
     padding:0;
@@ -6,28 +29,30 @@ body{
 p{margin:0; padding:0;}
 
 header{
-    background-color: rgb(21, 143, 174);
+    background-color: #569C87;
     text-align: center;
     margin-top: 0%;
     margin-bottom: 0%;
 }
-header p{
+header h1{
     font-family: 'Montserrat', Impact, Arial, sans-serif;
     font-weight: bold;
     margin-top: 0%;
     margin-bottom: 0%;
     font-size:450%;
     font-weight: bold;
-    color: yellow;
+    color: #FCCA46;
 }
 .note_page2{
-    font-family: Croissant One; 
+    padding-top: 3%;
+    font-family: CroissantOne; 
     margin-top: 2%;
     text-align: center;
     font-size: 150%;
     font-weight: bold;
 }
 .conteneur_page2{
+    box-shadow: 1px 1px 2px 2px grey;
     width:60%;
     height: auto;
     background-color: #FEF9E7;
@@ -177,11 +202,11 @@ header p{
 .div_foot--page2{
   font-family: 'Montserrat', Impact, Arial, sans-serif;
   font-weight: bold;
-  background-color: #158fae;
+  background-color: #569C87;
   padding-right: 3%;
   padding-left: 3%;
   font-size: 250%;
-  color: yellow;
+  color: #FCCA46;
   display: flex;
   justify-content: space-between;
   position: fixed; bottom: 0px; left: 0; right: 0;
@@ -189,11 +214,11 @@ header p{
 }
 .mlegales a{
     text-decoration: none;
-    color: yellow;
+    color: #FCCA46;
 }
 .contact a{
     text-decoration: none;
-    color: yellow;
+    color: #FCCA46;
 }
 .contact{
     &:hover{
@@ -227,19 +252,48 @@ header p{
     } 
    }
    }
+/*La media query de largeur maximale 1030px*/
+@media screen and (max-width: 1030px){
+    .conteneur_page2{
+        align-items: center;
+        justify-items: center;
+        margin-top: 2%;
+        padding-top: 8%;
+        width: 80%;
+        height: 1000px;
+        background-color: #FEF9E7;
+        margin-left: 10%;
+        margin-right: 10%;
+        overflow: scroll;
+        text-align: left;
+        margin-bottom: 1%;
+        padding-bottom: 2%;
+        flex-wrap: wrap;
+        
+    }
+    .menu1_page2 p {
+        font-size: 1.2em;
+        margin-top: 3%;
+    }
+    .menu2_page2 p {
+        font-size: 1.2em;
+        margin: 4%;
+    }
+}
 /*La media query de largeur maximale 1024px*/
-@media screen and (max-width: 1024px){
-    header p{
+@media screen and (max-width: 900px){
+    body{padding: 0px; margin: 0px;}
+    header h1{
         font-family: 'Montserrat', Impact, Arial, sans-serif;
         font-weight: bold;
         margin-top: 0%;
         margin-bottom: 0%;
         font-size: 3.5em;
         font-weight: bold;
-        color: yellow;
+        color: #FCCA46;
     }
     .note_page2{
-        font-family: Croissant One; 
+        font-family: CroissantOne; 
         margin-top: 6%;
         text-align: center;
         font-size: 1.2em;
@@ -247,15 +301,18 @@ header p{
         font-weight: bold;
     }
     .conteneur_page2{
+        align-items: center;
+        justify-items: center;
         margin-top: 2%;
-        width:80%;
-        height: auto;
+        padding-top: 5%;
+        width: 84%;
+        height: 800px;
         background-color: #FEF9E7;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 8%;
+        margin-right: 8%;
         overflow: scroll;
         text-align: left;
-        margin-bottom: 6%;
+        margin-bottom: 1%;
         padding-bottom: 2%;
         flex-wrap: wrap;
         
@@ -323,7 +380,7 @@ header p{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-left: 8%;
+        padding-left: 6%;
         margin-top:  0px;
         margin-bottom: 0px;
         padding-top: 0px;
@@ -332,15 +389,15 @@ header p{
     .menu2_page2 {
         width: 90%;
         text-align: center;
-        padding-left: 8%;
+        padding-left: 6%;
     }
     .menu1_page2 p {
         font-size: 1em;
-        margin-top: 1%;
+        margin-top: 2%;
     }
     .menu2_page2 p {
         font-size: 1em;
-        margin: 2%;
+        margin: 3%;
     }
     .aligne1{padding-left: 0%;}
     .aligne2{padding-left: 0%;}
@@ -352,11 +409,11 @@ header p{
     .div_foot--page2{
       font-family: 'Montserrat', Impact, Arial, sans-serif;
       font-weight: bold;
-      background-color: #158fae;
+      background-color: #569C87;
       padding-right: 3%;
       padding-left: 3%;
       font-size: 2em;
-      color: yellow;
+      color: #FCCA46;
       display: flex;
       justify-content: space-between;
       position: fixed; bottom: 0px; left: 0; right: 0;
@@ -366,17 +423,17 @@ header p{
 /*La media query de largeur maximale 760px*/
 @media screen and (max-width: 760px){
    
-    header p{
+    header h1{
         font-family: 'Montserrat', Impact, Arial, sans-serif;
         font-weight: bold;
         margin-top: 0%;
         margin-bottom: 0%;
         font-size:2em;
         font-weight: bold;
-        color: yellow;
+        color: #FCCA46;
     }
     .note_page2{
-        font-family: Croissant One; 
+        font-family: CroissantOne; 
         margin-top: 4%;
         text-align: center;
         font-size: 1.2em;
@@ -491,11 +548,11 @@ header p{
     .div_foot--page2{
       font-family: 'Montserrat', Impact, Arial, sans-serif;
       font-weight: bold;
-      background-color: #158fae;
+      background-color: #569C87;
       padding-right: 3%;
       padding-left: 3%;
       font-size: 1em;
-      color: yellow;
+      color: #FCCA46;
       display: flex;
       justify-content: space-between;
       position: fixed; bottom: 0px; left: 0; right: 0;
@@ -505,17 +562,17 @@ header p{
 /*La media query de largeur maximale 375px*/
 @media screen and (max-width:375px){
         
-        header p{
+        header h1{
             font-family: 'Montserrat', Impact, Arial, sans-serif;
             font-weight: bold;
             margin-top: 0%;
             margin-bottom: 0%;
             font-size:1.8em;
             font-weight: bold;
-            color: yellow;
+            color: #FCCA46;
         }
         .note_page2{
-            font-family: Croissant One; 
+            font-family: CroissantOne; 
             margin-top: 4%;
             text-align: center;
             font-size: 1.2em;
@@ -630,11 +687,11 @@ header p{
         .div_foot--page2{
           font-family: 'Montserrat', Impact, Arial, sans-serif;
           font-weight: bold;
-          background-color: #158fae;
+          background-color: #569C87;
           padding-right: 3%;
           padding-left: 3%;
           font-size: .9em;
-          color: yellow;
+          color: #FCCA46;
           display: flex;
           justify-content: space-between;
           position: fixed; bottom: 0px; left: 0; right: 0;
@@ -642,6 +699,7 @@ header p{
         }
 
 }
+/*
 @font-face{
     font-family: Croissant One;
     src: local("Croissant One");
@@ -664,4 +722,4 @@ header p{
     src:url(Croissant+One.svg) format('svg');
     src:url(Croissant+One.woff) format('woff');
     src:local(CroissantOne-Regular) format('ttf');
-}
+}*/
