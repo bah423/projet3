@@ -381,8 +381,24 @@ header h1 {
     padding-left: 2%;
   }
 }
-/*La média query de largeur maximale 1024px*/
-@media screen and (max-width: 1024px) {
+/*La media query de largeur maximale 1100px*/
+@media screen and (max-width: 1100px) {
+  .conteneur_page1 {
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #f5deda;
+    margin-bottom: 2%;
+    overflow: scroll;
+    text-align: left;
+    padding-bottom: 2%;
+    flex-wrap: wrap;
+  }
+}
+/*La média query de largeur maximale 900px*/
+@media screen and (max-width: 900px) {
   header h1 {
     font-family: "Montserrat", Impact, Arial, sans-serif;
     font-weight: bold;
@@ -922,36 +938,5 @@ header h1 {
     right: 0;
   }
 }
-/*Les différentes polices utilisées*/
-/*@font-face{
-    font-family: Courgette;
-    src: local("Courgette")
-}
-@font-face{ 
-    font-family: Devonshire;
-    src:local("Devonshire");
-}
-@font-face {
-    font-family: Dancing Script;
-    src: local("Dancing Script");
-  }
-  @font-face{
-    font-family: Segoe Print;
-    src: local("Segoe Print");
-}
-@font-face{ 
-    font-family: "Montserrat";
-    src:url(Montserrat.eot) format('eot');
-    src:url(Montserrat.svg) format('svg');
-    src:url(Montserrat.woff) format('woff');
-    src:url(Montserrat.ttf) format('ttf');
-    } 
-@font-face{ 
-    font-family: "Felipa";
-    src:url(Felipa.eot) format('eot');
-    src:url(Felipa.svg) format('svg');
-    src:url(Felipa.woff) format('woff');
-    src:url(Felipa.ttf) format('ttf');
-    } */
 
 /*# sourceMappingURL=stylepage1.css.map */

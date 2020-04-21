@@ -683,33 +683,5 @@ header h1 {
     right: 0;
   }
 }
-/*Les différentes polices utilisées*/
-/*
-@font-face{
-    font-family: Courgette;
-    src: local("Courgette")
-}
-@font-face {
-    font-family: Dancing Script;
-    src: local("Dancing Script");
-  }
-  @font-face{
-    font-family: Segoe Print;
-    src: local("Segoe Print");
-}
-@font-face{ 
-    font-family: "Montserrat";
-    src:url(Montserrat.eot) format('eot');
-    src:url(Montserrat.svg) format('svg');
-    src:url(Montserrat.woff) format('woff');
-    src:url(Montserrat.ttf) format('ttf');
-    } 
-@font-face{ 
-    font-family: "Felipa";
-    src:url(Felipa.eot) format('eot');
-    src:url(Felipa.svg) format('svg');
-    src:url(Felipa.woff) format('woff');
-    src:url(Felipa.ttf) format('ttf');
-    } */
 
 /*# sourceMappingURL=stylepage3.css.map */

@@ -693,25 +693,5 @@ header h1 {
     right: 0;
   }
 }
-/*Les différentes polices utilisées*/
-/*@font-face{
-    font-family: Kaushan Script;
-    src: local("Kaushan Script")
-}
-@font-face{
-    font-family: Segoe Print;
-    src: local("Segoe Print");
-}
-@font-face{ 
-    font-family: "Montserrat";
-    src:url(Montserrat.eot) format('eot');
-    src:url(Montserrat.svg) format('svg');
-    src:url(Montserrat.woff) format('woff');
-    src:url(Montserrat.ttf) format('ttf');
-    } 
-@font-face{ 
-    font-family: "Devonshire-Regular";
-    src:local(Devonshire-Regular) format('ttf');
-    } */
 
 /*# sourceMappingURL=stylepage4.css.map */

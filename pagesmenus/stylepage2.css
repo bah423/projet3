@@ -822,29 +822,5 @@ header h1 {
     right: 0;
   }
 }
-/*
-@font-face{
-    font-family: Croissant One;
-    src: local("Croissant One");
-}
-@font-face{
-    font-family: Croissant One;
-    src: local("Croissant One");
-}
-@font-face{ 
-    font-family: "Montserrat";
-    src:url(Montserrat.eot) format('eot');
-    src:url(Montserrat.svg) format('svg');
-    src:url(Montserrat.woff) format('woff');
-    src:url(Montserrat.ttf) format('ttf');
-    } 
-@font-face{
-    font-family: "Croissant+One";
-    src: url(https://fonts.google.com/specimen/Croissant+One?query=croiss);
-    src:url(Croissant+One.eot) format('eot');
-    src:url(Croissant+One.svg) format('svg');
-    src:url(Croissant+One.woff) format('woff');
-    src:local(CroissantOne-Regular) format('ttf');
-}*/
 
 /*# sourceMappingURL=stylepage2.css.map */
